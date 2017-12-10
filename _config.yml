@@ -4,7 +4,7 @@ bio:                'A compendium of community Nimiq-related content'
 description:        "A compendium of community Nimiq-related content"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "http://nimiq.community" # the base hostname & protocol for your site
 
 defaults:
 - scope:
@@ -57,7 +57,7 @@ paginate: 6
 paginate_path: "/blog/page:num/"
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://nimiq.community
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]

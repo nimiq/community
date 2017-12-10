@@ -1,6 +1,6 @@
 # Nimiq Community Site
 
-A site to gather user contributions to projects related to [Nimiq](https://nimiq.com/)
+A site to gather user contributions of projects related to [Nimiq](https://nimiq.com/)
 
 - git clone https://github.com/nimiq/community.git
 - apt-get install jekyll
