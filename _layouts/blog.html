@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+
+						<ul class="icons">
+              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+	      <li><a href="https://telegram.me/{{site.instagram}}" class="icon fa-comment" rel="nofollow"><span class="label">Instagram</span></a></li>	
+              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+          <article class="post featured">
+            <header class="major">
+              <h2><a href="#">Community Blog</a></h2>
+              <p>Non-techie?. No problema. If you can write you can contribute. 
+							</p>
+            </header>
+						<p>
+							
+							If you feel like unleashing your inner writer. If you need to be heard. If you have strong insightful opinions about Nimiq, finance, web, technology, or any topic you think might be of interest to the community, speak up!. You can reach me in our Telegram or Discord or you can write me an email using the form at the bottom.
+						<p>
+						</p>
+						</p>
+
+          </article>
+					<!-- Post -->
+					<section class="posts">
+						{% for post in site.posts %}
+						{% assign mod3 = forloop.index | modulo: 3 %}
+							<article>
+								<header>
+									<span class="date">{{ post.date | date_to_string }}</span>
+									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
+								</header>
+								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+								<p>{{ post.excerpt }}</p>
+								<ul class="actions">
+									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
+								</ul>
+							</article>
+							{% if mod3 == 0 %} 
+							{% endif %}
+						{% endfor %}
+
+					</section>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>
