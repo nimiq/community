@@ -2,9 +2,9 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>/blog/welcome-to-nimiq-community/</loc>
+      <loc>http://nimiq.community/blog/welcome-to-nimiq-community/</loc>
       
-        <lastmod>2017-12-08T00:00:00+00:00</lastmod>
+        <lastmod>2017-12-08T00:00:00+07:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>0.7</priority>
@@ -12,8 +12,8 @@
   
   
     <url>
-      <loc>/benchmark/</loc>
-       <lastmod>2017-12-07T00:00:00+00:00</lastmod>
+      <loc>http://nimiq.community/benchmark/</loc>
+       <lastmod>2017-12-07T00:00:00+07:00</lastmod>
       
        <changefreq>daily</changefreq>
       
@@ -22,8 +22,8 @@
      </url>
   
     <url>
-      <loc>/blog/</loc>
-       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+      <loc>http://nimiq.community/blog/</loc>
+       <lastmod>2017-11-02T00:00:00+07:00</lastmod>
       
        <changefreq>weekly</changefreq>
       
@@ -32,8 +32,8 @@
      </url>
   
     <url>
-      <loc>/fanart/</loc>
-       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+      <loc>http://nimiq.community/fanart/</loc>
+       <lastmod>2017-11-02T00:00:00+07:00</lastmod>
       
        <changefreq>weekly</changefreq>
       
@@ -42,8 +42,8 @@
      </url>
   
     <url>
-      <loc>/</loc>
-       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+      <loc>http://nimiq.community/</loc>
+       <lastmod>2017-11-02T00:00:00+07:00</lastmod>
       
        <changefreq>weekly</changefreq>
       
@@ -52,8 +52,8 @@
      </url>
   
     <url>
-      <loc>/projects/</loc>
-       <lastmod>2017-11-02T00:00:00+00:00</lastmod>
+      <loc>http://nimiq.community/projects/</loc>
+       <lastmod>2017-12-20T00:00:00+07:00</lastmod>
       
        <changefreq>weekly</changefreq>
       
@@ -62,7 +62,7 @@
      </url>
   
     <url>
-      <loc>/sitemap.xml</loc>
+      <loc>http://nimiq.community/sitemap.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -72,7 +72,7 @@
      </url>
   
     <url>
-      <loc>/feed.xml</loc>
+      <loc>http://nimiq.community/feed.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
@@ -82,7 +82,7 @@
      </url>
   
     <url>
-      <loc>/feed.xslt.xml</loc>
+      <loc>http://nimiq.community/feed.xslt.xml</loc>
        <lastmod>2017-11-10T00:20:35+00:00</lastmod>
       
        <changefreq>weekly</changefreq>
