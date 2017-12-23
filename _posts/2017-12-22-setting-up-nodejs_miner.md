@@ -11,7 +11,7 @@ image: "/images/nodejs_1.png"
 In this guide, we describe the steps required to configure a Node.js miner for Nimiq running on a server.
 Nimiq is the first blockchain built to be native to the Web platform. Since it is implemented in JavaScript,
 it is possible to mine Nimiq directly from the Web browser by simply going to a Web page
-([example for the Betanet](https://nimiq.com/miner). However, a mining client is also implemented in
+([example for the Betanet](https://nimiq.com/miner)). However, a mining client is also implemented in
 Node.js, which is a cross-platform JavaScript run-time environment for executing JavaScript code server-side.
 Dedicated miners may want to set up a mining machine that runs the Node.js miner instead as it is faster while
 not requiring the browser to be open all the time. In this guide, we explain how to configure the Node.js miner for Nimiq.
@@ -185,7 +185,7 @@ $ npm run build
 
 To run the Node.js miner for Nimiq, we need a publicly routable IP, a domain name and an SSL certificate. Now we have everything we need!
 Start the client by running clients/nodejs/index.js. To adjust the number of threads, provide the option to the miner parameter in the command
-below, e.g. --miner=2 to use two threads.
+below, e.g. &#8208;&#8208;miner=2 to use two threads.
 
 ```bash
 $ cd ~/core/clients/nodejs/
@@ -199,7 +199,7 @@ Take note of the first two lines produced by the node command. They show your wa
 Eventually you should see messages that the blocks are downloading.
 Wait until you catch up to the latest block at [Nimiq Watch](https://nimiq.watch).
 The miner is now running if you see lines that begin with the word ‘Miner’. Congratulations!
-As an optional step, you can use <strong>pm2</strong>, which is a process manager for Node.js applications, to
+As an optional step, you can use <strong>PM2</strong>, which is a process manager for Node.js applications, to
 manage and run the miner as a background service. This is described in the next section of this guide.
 
 ```bash
@@ -216,7 +216,7 @@ manage and run the miner as a background service. This is described in the next 
 ## 6. Configuring PM2
 
 Now we want to keep the miner running, even after we disconnect from our SSH session. We can do this through <a href="http://pm2.keymetrics.io/">PM2</a>, which is
-a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (--) are used to separate index.js and all the parameters that we pass to it.
+a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (&#8208;&#8208;) are used to separate index.js and all the parameters that we pass to it.
 
 ```bash
 $ sudo npm install -g pm2
@@ -234,7 +234,7 @@ $ pm2 list
 $ pm2 logs
 ```
 
-**Optional**: we can also make the miner restart automatically upon system restart using PM2 startup. Type the following pm2 startup command, and do what it says to generate the startup script.
+**Optional**: we can also make the miner restart automatically upon system restart using PM2 startup. Type the following PM2 startup command, and do what it says to generate the startup script.
 
 ```bash
 $ pm2 startup systemd
@@ -256,7 +256,7 @@ $ systemctl status pm2-nimiq
            ‣ 10427 PM2 v2.9.1: God Daemon (/home/nimiq/.pm2)   
 ```
 
-Test reboot the server, and make sure that the miner is still running (via pm2 list and top).
+Test reboot the server, and make sure that the miner is still running (via PM2 list and top).
 
 Congratulations. Your Nimiq Node.js miner is now running! You can check how many NIMs you have mined by entering the wallet address used by the miner
 at block explorer sites, such as [Nimiq Watch](https://nimiq.watch) or [nimiq.mopsus.com](https://nimiq.mopsus.com).
