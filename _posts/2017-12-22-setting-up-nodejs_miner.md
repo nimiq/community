@@ -21,7 +21,7 @@ not requiring the browser to be open all the time. In this guide, we explain how
 ## 1. Getting Started
 
 The following are the pre-requisites to running the Node.js miner for Nimiq:
-- A server with a public IP address. Alternatively, you <strong>may</strong> be able to use a Virtual Private Server VPS) to mine. However many VPS providers have terms-of-service that explicitly prohibit cryptocurrency mining and may suspend or limit your account upon excessive CPU usage.
+- A server with a public IP address. Alternatively, you <strong>may</strong> be able to use a Virtual Private Server (VPS) to mine. However many VPS providers have terms-of-service that explicitly prohibit cryptocurrency mining and may suspend or limit your account upon excessive CPU usage.
 - Ubuntu Linux 16.04 LTS, although other versions should work too.
 
 Ensure that you can connect to the server via SSH from the terminal. Windows users may wish to use [PuTTY](http://www.putty.org).
