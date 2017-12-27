@@ -97,7 +97,7 @@ Now we need to adjust the firewall again to open port 80 (http) and 443 (https).
 
 ```bash
 $ sudo ufw app list
-$ sudo ufw allow ‘Nginx Full’
+$ sudo ufw allow 'Nginx Full'
 $ sudo ufw status
 ```
 
