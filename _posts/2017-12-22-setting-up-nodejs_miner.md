@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Running a Node.js Miner for Nimiq"
-date:   2017-12-22
+date:   2017-12-27
 excerpt: "A simple guide on how to set up the Node.js miner for Nimiq"
 image: "/images/nodejs_1.png"
 ---
@@ -199,6 +199,24 @@ Take note of the first two lines produced by the node command. They show your wa
 Eventually you should see messages that the blocks are downloading.
 Wait until you catch up to the latest block at [Nimiq Watch](https://nimiq.watch).
 The miner is now running if you see lines that begin with the word ‘Miner’. Congratulations!
+
+If you want to <strong>use your own wallet address</strong> instead you need to get the private key. 
+Visit your [Nimiq wallet](https://nimiq.com/wallet), open the console and run:
+```javascript
+$.wallet.dump()
+```
+
+it will return a 64 character long HEX string. This is your private key. Now we run the code above but with an added parameter called `--wallet-seed` so it looks like this: 
+
+```bash
+$ cd ~/core/clients/nodejs/
+$ node index.js --host mynimiqminer01.cf --port 8080 \
+--key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
+--cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
+--wallet-seed YOUR_PRIVATE_KEY \
+--miner=2
+```
+
 As an optional step, you can use <strong>pm2</strong>, which is a process manager for Node.js applications, to
 manage and run the miner as a background service. This is described in the next section of this guide.
 
@@ -264,6 +282,5 @@ at block explorer sites, such as [Nimiq Watch](https://nimiq.watch) or [nimiq.mo
 <div class="image"><img src="/images/nodejs_4.png" alt=""></div>
 
 ## TODO:
-- How to use a seed wallet?
 - How to show balance while mining?
 - Mining pool?
