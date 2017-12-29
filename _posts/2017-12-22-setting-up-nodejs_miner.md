@@ -300,7 +300,22 @@ To run it on a personal system and without a domain name, you will need to gener
 
 ### d. Import wallet.
 
-To import your wallet from the browser, follow the [instructions on Nimiq's website](https://nimiq.com/faq/#export-import-private-keys) to dump/export the private key, and to import it start the node with node index.js --wallet-seed <private key that was dumped> --<remaining args>. This will permanently change the wallet address and the user can see their balance in the browser that shares the same private key.
+If you want to <strong>use your own wallet address</strong> you need to get the private key. 
+ Visit your [Nimiq wallet](https://nimiq.com/wallet), open the console and run:
+ ```javascript
+ $.wallet.dump()
+ ```
+ 
+ it will return a 64 character long HEX string. This is your private key. Now start the client with an added parameter called `--wallet-seed` followed your key: 
+ 
+ ```bash
+ $ cd ~/core/clients/nodejs/
+ $ node index.js --host mynimiqminer01.cf --port 8080 \
+ --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
+ --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
+ --wallet-seed YOUR_PRIVATE_KEY \
+ --miner=2
+ ``` 
 
 ---
 
