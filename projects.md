@@ -17,10 +17,10 @@ Below is a list of community projects with their respective leader/manager (whom
 <span class="image left"><img src="{{ "/images/MagnifyingGlass.jpeg" | absolute_url }}" alt="" /></span>
 
 ### [NIMIQ.WATCH](https://nimiq.watch)
-Nimiq blockchain explorer and charting tool. **- By @Soeren -** 
+Nimiq blockchain explorer and charting tool. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -** 
 
 ### [Nimiq Mopsus](https://nimiq.mopsus.com)
-Nimiq blockchain explorer with detailed data about mining and hashrate. **- By @Kenblazer -**
+Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [@Kenblazer](https://discord.gg/55rHkGz) -**
   
 ## Faucets
 
@@ -60,10 +60,10 @@ Nimiq blockchain explorer with detailed data about mining and hashrate. **- By @
 <span class="image right"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
 
 ### [Week In Review Newsletter](https://nimiq.watch/news)
-Weekly newsletter that summarizes important news and developments related to nimiq. **- By @Soeren -**
+Weekly newsletter that summarizes important news and developments related to nimiq. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
 
 ### [Nimiq price](https://nimiqprice.com)
-Site with information related to Nimiq price. **- By @Sebastian -**
+Site with information related to Nimiq price. **- By [@Kenblazer](https://discord.gg/55rHkGz) -**
 
 ### [Nimiq Community Telegram Bot](https://github.com/PanoramicRum/Nimiq-Community-Bot) 
-Aids with common questions by the community and queries to the NET Smart Contract.  **- By @Richy -**
+Aids with common questions by the community and queries to the NET Smart Contract.  **- By [@Richy](https://t.me/RichyBC) -**
