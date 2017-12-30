@@ -63,7 +63,7 @@ Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [
 Weekly newsletter that summarizes important news and developments related to nimiq. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
 
 ### [Nimiq price](https://nimiqprice.com)
-Site with information related to Nimiq price. **- By [@Kenblazer](https://discord.gg/55rHkGz) -**
+Site with information related to Nimiq price. **- By [@Sebastian](https://t.me/sebjalm) -**
 
 ### [Nimiq Community Telegram Bot](https://github.com/PanoramicRum/Nimiq-Community-Bot) 
 Aids with common questions by the community and queries to the NET Smart Contract.  **- By [@Richy](https://t.me/RichyBC) -**
