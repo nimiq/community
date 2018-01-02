@@ -43,18 +43,14 @@ Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [
 ## Miners
 
 <span class="image left"><img src="{{ "/images/mine.jpg" | absolute_url }}" alt="" /></span>
+
+### [Coinmiq](http://www.coinmiq.com)
+Embeddable Nimiq miner for your website. **- By [@Porkachu](https://t.me/porkachu) -**
+
+&nbsp;
+
+&nbsp;
  
-&nbsp;
-  
-&nbsp;
-  
-&nbsp;
- 
-  
-&nbsp;
-  
-&nbsp;
-  
 ## Misc 
     
 <span class="image right"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
