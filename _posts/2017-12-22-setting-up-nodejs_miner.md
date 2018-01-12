@@ -299,6 +299,7 @@ To run it on a personal system and without a domain name, you will need to gener
 > Also, it's possible to run the nodejs miner locally with just localhost and a self signed certificate, but it's just not recommended, because if everybody would do it, the network would centralize, as no clients that run as localhost can connect to each other only to public domains. But it's possible. I don't know if anything will be done to prevent that or to fix the not-reachable problem, but at least for testing the nodejs client, you can run it locally without a vps or domain.
 
 Addon Januari 12 2018 (Use these steps if you don't want to create a self signed certificate and if you want to run the miner with your domain name):
+
 You will need to do a few things to be able to setup your local network for Nimiq mining:
 - Set the DNS record of your domain to your local IP address (see step 3).
 Find out what your local IP address is, the easyest way to do this is goole for "What is my IP" and clicking the first link.
