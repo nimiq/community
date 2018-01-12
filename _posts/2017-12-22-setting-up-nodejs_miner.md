@@ -298,6 +298,29 @@ To run it on a personal system and without a domain name, you will need to gener
 
 > Also, it's possible to run the nodejs miner locally with just localhost and a self signed certificate, but it's just not recommended, because if everybody would do it, the network would centralize, as no clients that run as localhost can connect to each other only to public domains. But it's possible. I don't know if anything will be done to prevent that or to fix the not-reachable problem, but at least for testing the nodejs client, you can run it locally without a vps or domain.
 
+Addon Januari 12 2018 (Use these steps if you don't want to create a self signed certificate and if you want to run the miner with your domain name):
+You will need to do a few things to be able to setup your local network for Nimiq mining:
+- Set the DNS record of your domain to your local IP address (see step 3).
+Find out what your local IP address is, the easyest way to do this is goole for "What is my IP" and clicking the first link.
+Alternatively you can go into the cmd or terminal window and type ipconfig /all in windows or ifconfig on linux.
+
+- You will need to forward ports on your local network to be able to generate a certificate.
+Disclaimer: Opening ports can influence the security of your local network! Please be carefull with what you are doing and use this guide at your own risk!
+You will need to forward ports in your local network. This means that incoming internet traffic will be redirected to a (local) IP in your network. So let's say your miner is connected on your local network. In this example we will assume that the IP is 192.168.0.125. So you will need to open a few ports for the miner to work. The ports you will need to open are port 80 and port 443. These are the ports used by certbot to get a certificate. You can also open port 22 if you want to use SSH to access your miner remotely.
+Because there are some many routers and modems out there I suggest going to [https://portforward.com/](https://portforward.com/) and find your device there, it should have steps on how to forward ports. If it doesn't then you should go to the manufacturer's website or search for your device on google. If you followed the rest of this guide you can check if everything is working by surfing to your domain name, it should show the Nginx welcome page (note that you will have to stop nginx in order to get the certificate).
+
+Steps:
+1) point your domain name to your IP
+2) Open ports 80 and 443
+3) Surf to your domain name -> Nginx landing page
+4) Stop Nginx
+5) Generate certificate
+6) Start miner
+7) ??
+8) Profit
+
+This part was written out the back of my head, I struggled for several hours getting this to work. So I might have missed some steps or specific things I did. But this should give you a good idea of the general flow. If you have any problems or remarks feel free to hit me up on discord (@DavGer)
+
 ### d. Import wallet.
 
 If you want to <strong>use your own wallet address</strong> you need to get the private key. 
