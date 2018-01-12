@@ -316,9 +316,10 @@ Steps:
 3) Surf to your domain name -> Nginx landing page
 4) Stop Nginx
 5) Generate certificate
-6) Start miner
-7) ??
-8) Profit
+6) Start Nginx
+7) Start miner
+8) ??
+9) Profit
 
 This part was written out the back of my head, I struggled for several hours getting this to work. So I might have missed some steps or specific things I did. But this should give you a good idea of the general flow. If you have any problems or remarks feel free to hit me up on discord (@DavGer)
 
