@@ -47,7 +47,8 @@ Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [
 ### [Coinmiq](http://www.coinmiq.com)
 Embeddable Nimiq miner for your website. **- By [@Porkachu](https://t.me/porkachu) -**
 
-&nbsp;
+### [NimiqWP](https://github.com/pom75/nimiqWP)
+Embeddable Nimiq miner for your WordPress website. **- By [@Stephane](https://github.com/pom75) -**
 
 &nbsp;
  
