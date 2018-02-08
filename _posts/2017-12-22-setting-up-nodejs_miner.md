@@ -292,18 +292,12 @@ $ pm2 start index.js -- --host mynimiqminer01.cf --port 8080 \
 
 ### c. Running the miner locally (not on VPS).
 
-To run it on a personal system and without a domain name, you will need to generate a self-signed SSL certificate and then run the regular command to start the node but replace the domain name with localhost, key with the generated key, and cert with the generated cert.
-
-@Soeren from discord says that:
-
-> Also, it's possible to run the nodejs miner locally with just localhost and a self signed certificate, but it's just not recommended, because if everybody would do it, the network would centralize, as no clients that run as localhost can connect to each other only to public domains. But it's possible. I don't know if anything will be done to prevent that or to fix the not-reachable problem, but at least for testing the nodejs client, you can run it locally without a vps or domain.
-
-Addon January 12 2018 (Use these steps if you don't want to create a self signed certificate and if you want to run the miner with your domain name):
+#### 1) With a domain name
+There are two options to run a miner on your local network. With a domain name is the best option (see explaination from @Soeren in 2)).
 
 You will need to do a few things to be able to setup your local network for Nimiq mining:
-- Set the DNS record of your domain to your local IP address (see step 3).
-Find out what your local IP address is, the easyest way to do this is goole for "What is my IP" and clicking the first link.
-Alternatively you can go into the cmd or terminal window and type ipconfig /all in windows or ifconfig on linux.
+- Set the DNS record of your domain to your public IP address (see step 3.).
+Your public IP address is the public IP of your router. The easyest way to know your public ip is to open your favorite searche engine, search "What is my IP" and open the first link.
 
 - You will need to forward ports on your local network to be able to generate a certificate.
 Disclaimer: Opening ports can influence the security of your local network! Please be carefull with what you are doing and use this guide at your own risk!
@@ -311,17 +305,24 @@ You will need to forward ports in your local network. This means that incoming i
 Because there are some many routers and modems out there I suggest going to [https://portforward.com/](https://portforward.com/) and find your device there, it should have steps on how to forward ports. If it doesn't then you should go to the manufacturer's website or search for your device on google. If you followed the rest of this guide you can check if everything is working by surfing to your domain name, it should show the Nginx welcome page (note that you will have to stop nginx in order to get the certificate).
 
 Steps:
-1) point your domain name to your IP
-2) Open ports 80 and 443
-3) Surf to your domain name -> Nginx landing page
+1) Point your domain name to your public IP
+2) Open ports 80 and 443, and forward ports to your computer
+3) Surf to your domain name -> You have to see nginx landing page
 4) Stop Nginx
-5) Generate certificate
+5) Generate the certificate
 6) Start Nginx
-7) Start miner
-8) ??
-9) Profit
+7) Start the miner
+8) Congratulation, you are mining :)
 
-This part was written out the back of my head, I struggled for several hours getting this to work. So I might have missed some steps or specific things I did. But this should give you a good idea of the general flow. If you have any problems or remarks feel free to hit me up on discord (@DavGer)
+If you have any problems or remarks feel free to hit me up on discord (@DavGer) => Section completed by @Trigger.
+
+#### 2) With a self-signed SSL certificate
+
+To run it on a personal system and without a domain name, you will need to generate a self-signed SSL certificate and then run the regular command to start the node but replace the domain name with localhost, key with the generated key, and cert with the generated cert.
+
+@Soeren from discord says that:
+
+> Also, it's possible to run the nodejs miner locally with just localhost and a self signed certificate, but it's just not recommended, because if everybody would do it, the network would centralize, as no clients that run as localhost can connect to each other only to public domains. But it's possible. I don't know if anything will be done to prevent that or to fix the not-reachable problem, but at least for testing the nodejs client, you can run it locally without a vps or domain.
 
 ### d. Import wallet.
 
