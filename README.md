@@ -2,8 +2,15 @@
 
 A site to gather user contributions of projects related to [Nimiq](https://nimiq.com/)
 
+Clone this git repository
 - git clone https://github.com/nimiq/community.git
-- apt-get install jekyll
+
+Install jekyll
+- On linux : apt-get install jekyll
+- On windows https://jekyllrb.com/docs/windows/
+
+Build the project
+- bundle install
 - bundle exec jekyll serve
 
 
