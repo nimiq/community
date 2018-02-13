@@ -2834,6 +2834,7 @@
 			padding: 0 0.75rem 0.75rem 0.75rem;
 			text-align: left;
 			text-transform: uppercase;
+			cursor: pointer;
 		}
 
 			@media screen and (max-width: 980px) {
