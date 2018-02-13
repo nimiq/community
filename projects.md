@@ -21,7 +21,41 @@ Nimiq blockchain explorer and charting tool. **- By [@Soeren](https://t.me/Not_i
 
 ### [Nimiq Mopsus](https://nimiq.mopsus.com)
 Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [@Kenblazer](https://discord.gg/55rHkGz) -**
-  
+
+&nbsp;
+
+&nbsp;
+
+## Wallets
+
+<span class="image right"><img src="{{ "/images/wallet.jpeg" | absolute_url }}" alt="" /></span>
+
+### [Nimiq Desktop Wallet](https://github.com/bradrisse/nimiq-desktop-wallet)
+A Nimiq Desktop Wallet. **- By [@BradRisse](https://github.com/bradrisse) -**
+
+### [Nimiq Browser Extension Wallet Manager](https://chrome.google.com/webstore/detail/nima-nimiq-wallet-manager/jfijpdoopiaiahclhnfoibiohfnjpcfo?hl=en)
+This extension lets you manage all your Nimiq wallets directly in your browser.  **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
+
+
+&nbsp;
+
+&nbsp;
+
+## Miners
+
+<span class="image left"><img src="{{ "/images/mine.jpg" | absolute_url }}" alt="" /></span>
+
+### [Coinmiq](http://www.coinmiq.com)
+Embeddable Nimiq miner for your website. **- By [@Porkachu](https://t.me/porkachu) -**
+
+### [NimiqWP](https://github.com/pom75/nimiqWP)
+Embeddable Nimiq miner for your WordPress website. **- By [@Stephane](https://github.com/pom75) -**
+
+&nbsp;
+
+&nbsp;
+
+
 ## Faucets
 
 <span class="image right"><img src="{{ "/images/faucet.jpeg" | absolute_url }}" alt="" /></span>
@@ -39,22 +73,10 @@ Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [
 
   
 &nbsp;
-
-## Miners
-
-<span class="image left"><img src="{{ "/images/mine.jpg" | absolute_url }}" alt="" /></span>
-
-### [Coinmiq](http://www.coinmiq.com)
-Embeddable Nimiq miner for your website. **- By [@Porkachu](https://t.me/porkachu) -**
-
-### [NimiqWP](https://github.com/pom75/nimiqWP)
-Embeddable Nimiq miner for your WordPress website. **- By [@Stephane](https://github.com/pom75) -**
-
-&nbsp;
  
 ## Misc 
     
-<span class="image right"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
+<span class="image left"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
 
 ### [Week In Review Newsletter](https://nimiq.watch/news)
 Weekly newsletter that summarizes important news and developments related to nimiq. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
