@@ -13,18 +13,18 @@ sitemap:
 <div class="table-wrapper">
 <table id="benchmark_table">
 	<tr>
-		<th>Name</th>
-          <th>CPU (exact model!)</th>
-          <th onclick="sortTable(2)">Base Freq (GHz)</th>
-          <th onclick="sortTable(3)">CACHE (MB)</th>
-          <th onclick="sortTable(4)">RAM (Type)</th>
-          <th onclick="sortTable(5)">RAM (GB)</th>
-          <th onclick="sortTable(6)">RAM Freq (MHz)</th>
-          <th onclick="sortTable(7)">MAX HASHRATE (KH/s)</th>
-          <th>Browser</th>
-          <th>OS</th>
-          <th onclick="sortTable(10)">Threads (LUNA Default)</th>
-          <th>GPU</th>
+	<th  onclick="sortTable(0,1)">Name</th>
+          <th onclick="sortTable(1,1)">CPU (exact model!)</th>
+          <th onclick="sortTable(2,0)">Base Freq (GHz)</th>
+          <th onclick="sortTable(3,0)">CACHE (MB)</th>
+          <th onclick="sortTable(4,1)">RAM (Type)</th>
+          <th onclick="sortTable(5,0)">RAM (GB)</th>
+          <th onclick="sortTable(6,0)">RAM Freq (MHz)</th>
+          <th onclick="sortTable(7,0)">MAX HASHRATE (KH/s)</th>
+          <th onclick="sortTable(8,1)">Browser</th>
+          <th onclick="sortTable(9,1)">OS</th>
+          <th onclick="sortTable(10,0)">Threads (LUNA Default)</th>
+          <th onclick="sortTable(11,1)">GPU</th>
 	</tr>
 	<tr>
 		<td>MacBook Pro (15-inch, Late 2011)</td>
@@ -187,8 +187,9 @@ sitemap:
 <a href="https://github.com/nimiq/community" class="image main"><img src="{{ "/images/AddBenchmark.gif" | absolute_url }}" alt="" /></a>
 	<hr />
 <script>
-function sortTable(n) {
+function sortTable(n,t) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var comparex, comparey;
   table = document.getElementById("benchmark_table");
   switching = true;
   dir = "asc"; 
@@ -199,13 +200,20 @@ function sortTable(n) {
       shouldSwitch = false;
       x = rows[i].getElementsByTagName("TD")[n];
       y = rows[i + 1].getElementsByTagName("TD")[n];
+	if (t==0){
+	comparex = parseInt(x.innerHTML.valueOf());
+	comparey = parseInt(y.innerHTML.valueOf());
+	} else {
+	comparex = x.innerHTML.toLowerCase();
+	comparey = y.innerHTML.toLowerCase();
+	}
       if (dir == "asc") {
-        if (parseInt(x.innerHTML.valueOf()) > parseInt(y.innerHTML.valueOf())) {
+        if (comparex > comparey) {
           shouldSwitch= true;
           break;
         }
       } else if (dir == "desc") {
-        if (parseInt(x.innerHTML.valueOf()) < parseInt(y.innerHTML.valueOf())) {
+        if (comparex < comparey) {
           shouldSwitch= true;
           break;
         }
