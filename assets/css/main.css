@@ -2822,12 +2822,13 @@
 		}
 
 		table td {
+			font-size: 0.65rem;
 			padding: 0.75rem 0.75rem;
 		}
 
 		table th {
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 0.8rem;
+			font-size: 0.7rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			line-height: 1.5;
