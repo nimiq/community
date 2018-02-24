@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #3023ae;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1668,7 +1668,7 @@
 		}
 
 	body {
-		color: #212931;
+		color: #3023ae;
 	}
 
 	body, input, select, textarea {
@@ -1812,11 +1812,11 @@
 	}
 
 	input, select, textarea {
-		color: #212931;
+		color: #000062;
 	}
 
 	a {
-		color: #212931;
+		color: #000062;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
 	}
 
@@ -1826,11 +1826,11 @@
 		}
 
 	strong, b {
-		color: #212931;
+		color: #000062;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #000062;
 	}
 
 	blockquote {
@@ -2021,8 +2021,8 @@
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 2px #000062;
+		color: #000062 !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2039,7 +2039,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #212931;
+			background-color: #000062;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2319,7 +2319,7 @@
 	}
 
 	label {
-		color: #212931;
+		color: #000062;
 	}
 
 	input[type="text"],
@@ -2340,7 +2340,7 @@
 
 	select option {
 		background-color: #ffffff;
-		color: #212931;
+		color: #000062;
 	}
 
 	.select-wrapper:before {
@@ -2349,7 +2349,7 @@
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #212931;
+		color: #000062;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2359,8 +2359,8 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #212931;
-		border-color: #212931;
+		background-color: #000062;
+		border-color: #000062;
 		color: #ffffff;
 	}
 
@@ -2822,12 +2822,13 @@
 		}
 
 		table td {
+			font-size: 0.65rem;
 			padding: 0.75rem 0.75rem;
 		}
 
 		table th {
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 0.8rem;
+			font-size: 0.7rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
 			line-height: 1.5;
@@ -2888,7 +2889,7 @@
 		}
 
 	table th {
-		color: #212931;
+		color: #000062;
 	}
 
 	table thead {
@@ -2990,7 +2991,7 @@
 	}
 
 	.pagination a {
-		color: #212931 !important;
+		color: #000062 !important;
 	}
 
 		.pagination a:hover {
@@ -3029,7 +3030,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
+			background-color: #3023ae;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
@@ -3057,7 +3058,7 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #1e252d;
+			background: #3023ae;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3173,7 +3174,7 @@
 			#intro .button.special {
 				background-color: #ffffff;
 				box-shadow: none;
-				color: #1e252d !important;
+				color: #000048 !important;
 			}
 
 				#intro input[type="submit"].special:hover,
@@ -3534,7 +3535,7 @@
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #000048;
 					}
 
 						#nav ul.links li.active a:hover {
@@ -3767,7 +3768,7 @@
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
-		max-width: 72rem;
+		max-width: 86rem;
 		z-index: 2;
 	}
 
@@ -4326,7 +4327,7 @@
 		#navPanelToggle.alt {
 			background-color: rgba(255, 255, 255, 0.875);
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
-			color: #212931;
+			color: #000062;
 		}
 
 			#navPanelToggle.alt:hover {
@@ -4363,7 +4364,7 @@
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
 		box-shadow: none;
-		color: #212931;
+		color: #000062;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4438,7 +4439,7 @@
 			}
 
 			#navPanel .close:hover {
-				color: #212931;
+				color: #000062;
 			}
 
 			@media screen and (max-width: 736px) {

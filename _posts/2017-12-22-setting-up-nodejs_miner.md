@@ -139,6 +139,7 @@ secure backup of this folder now. This configuration directory will
 also contain certificates and private keys obtained by Certbot so
 making regular backups of this folder is ideal.
 ```
+*Note:* If you encounter an error along the lines of "Can not bind port 80" it's due to Nginx (that we installed before) running on port 80 already. So before starting certbot, stop Nginx with `sudo service nginx stop` and start it again when certbot is finished via `sudo service nginx start`.
 
 Next, we verify that auto-renewal works. You should not see any error from the command below.
 

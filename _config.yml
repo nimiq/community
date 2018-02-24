@@ -4,7 +4,7 @@ bio:                'A compendium of community Nimiq-related content'
 description:        "A compendium of community Nimiq-related content"
 locale:             en_US
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nimiq.community" # the base hostname & protocol for your site
+url: "https://nimiq.community"
 
 defaults:
 - scope:
@@ -31,14 +31,14 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   default
+disqus_shortname:   nimiq
 
 # Social
 analytics-id:       "default"
 twitter:            nimiq
-facebook:           nimiq
+facebook:           nimiqcoin
 instagram:          nimiq
-github:             nimiq
+github:             nimiq/community
 
 # personal
 location:           Santa Teresa, CR

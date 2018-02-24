@@ -51,6 +51,30 @@ Embeddable Nimiq miner for your website. **- By [@Porkachu](https://t.me/porkach
 ### [NimiqWP](https://github.com/pom75/nimiqWP)
 Embeddable Nimiq miner for your WordPress website. **- By [@Stephane](https://github.com/pom75) -**
 
+### [Skypool](https://nimiq.skypool.org)
+Mining pool with desktop miner clients. **- By [@Azard](https://github.com/Azard) -**
+
+&nbsp;
+
+&nbsp;
+
+
+## Faucets
+
+<span class="image right"><img src="{{ "/images/faucet.jpeg" | absolute_url }}" alt="" /></span>
+
+  
+&nbsp;
+  
+ 
+   
+&nbsp;
+  
+  
+  
+&nbsp;
+
+  
 &nbsp;
 
 &nbsp;
