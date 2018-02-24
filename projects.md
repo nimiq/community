@@ -54,6 +54,10 @@ Embeddable Nimiq miner for your WordPress website. **- By [@Stephane](https://gi
 ### [Skypool](https://nimiq.skypool.org)
 Mining pool with desktop miner clients. **- By [@Azard](https://github.com/Azard) -**
 
+### [Nimiq Miner](https://nimiqminer.com)
+Nimiq Mining Calculator. **- By [@BradRisse](https://github.com/bradrisse) -**
+
+  
 &nbsp;
 
 &nbsp;
