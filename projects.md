@@ -94,5 +94,5 @@ Site with information related to Nimiq price. **- By [@Sebastian](https://t.me/s
 ### [Nimiq Community Telegram Bot](https://github.com/PanoramicRum/Nimiq-Community-Bot) 
 Aids with common questions by the community and queries to the NET Smart Contract.  **- By [@Richy](https://t.me/RichyBC) -**
 
-### [Nimiq supply](www.nimiq.supply)
+### [Nimiq supply](http://nimiq.supply)
 Site with real time count of coins in circulation and price information. **- By [@DavGer](https://t.me/DavGer) -**
