@@ -3,7 +3,7 @@ layout: post
 title:  "How To Buy NET Tokens (Liqui)"
 date:   2018-03-07
 excerpt: "With mainnet approaching, this is how to buy some last minute NET"
-image: "/images/Liqui.png"
+image: "/images/liqui.png"
 ---
 
 ## How To Buy NET Tokens On Liqui.io
