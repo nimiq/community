@@ -18,8 +18,10 @@ Now, I’ll assume you already know how to buy one of the main cryptocurrencies,
 
 NET tokens are currently listed on a few smaller exchanges, but for this post I’m going to focus on Liqui.io because it normally has the highest (although still relatively small) volume of trading.
 
-Setting up an account on Liqui is very simple, once you’ve got your account open you want to be looking for the NET markets. You can trade NET for ETH, BTC or USDT. Find the relevant market in the table on the left side of the screen and select it.
 
+### Creating A Liqui.io Account
+
+Setting up an account on Liqui is very simple, just add some basic details and that's it! Because the exchange only involves crypto-to-crypto trades there are less procedures than exchanges involving FIAT currency. Once you’ve got your account open you want to be looking for the NET markets. You can trade NET for ETH, BTC or USDT. Find the relevant market in the table on the left side of the screen and select it.
 
 
 ### Buying NET
