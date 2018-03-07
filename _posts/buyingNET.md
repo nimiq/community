@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Nimiq Community Site"
-date:   2017-12-08
-excerpt: "Let me welcome you to this site and tell you what is all about"
+title:  "How To Buy NET Tokens (Liqui)"
+date:   2018-03-07
+excerpt: "With mainnet approaching, this is how to buy some last minute NET"
 image: "/images/NimiqCommunity.png"
 ---
 
