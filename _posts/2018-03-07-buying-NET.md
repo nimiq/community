@@ -28,9 +28,15 @@ Setting up an account on Liqui is very simple, just add some basic details and t
 
 Liqui doesn’t allow you to ‘market buy’, you have to place a buy order. This order can however be below the current market price, so that it will be instantly filled. Choose the amount of NET you wish to purchase, and the price you wish to pay, and your order will either be filled or posted on the market, hopefully someone will then come along and sell to you!
 
+
+### Withdrawal & Storage
+
 Once you’ve bought your NET, you’ll want go to your ‘Balances’ page to confirm how many you hold. You will then see a withdrawal button against the NET balance. **It’s always recommended to withdraw your tokens to a wallet where you hold the private key, in case the exchange encounters difficulties of some kind.** NET is an ERC20 token, so it can be held in any Ethereum wallet. If you don’t already have some form of Ethereum wallet one of the easiest ways to set one up is by creating a paper wallet on MyEtherWallet.
 
 When you go to withdraw your NET from Liqui you need to send these to the public address of your Ethereum wallet. The tokens will then be listed separately when you view the wallet on a site like Etherscan.
+
+
+### What Next?...
 
 You can then hold these tokens, trade them, or use the conversion tool to trade them for NIM, which you will receive once the mainnet launches. 1 NET will convert to 100 NIM.
 
