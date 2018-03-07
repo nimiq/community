@@ -21,6 +21,7 @@ NET tokens are currently listed on a few smaller exchanges, but for this post I�
 Setting up an account on Liqui is very simple, once you’ve got your account open you want to be looking for the NET markets. You can trade NET for ETH, BTC or USDT. Find the relevant market in the table on the left side of the screen and select it.
 
 
+
 ### Buying NET
 
 Liqui doesn’t allow you to ‘market buy’, you have to place a buy order. This order can however be below the current market price, so that it will be instantly filled. Choose the amount of NET you wish to purchase, and the price you wish to pay, and your order will either be filled or posted on the market, hopefully someone will then come along and sell to you!
