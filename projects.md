@@ -55,7 +55,19 @@ Embeddable Nimiq miner for your WordPress website. **- By [@Stephane](https://gi
 Mining pool with desktop miner clients. **- By [@Azard](https://github.com/Azard) -**
 
 ### [Nimiq Miner](https://nimiqminer.com)
-Nimiq Mining Calculator. **- By [@BradRisse](https://github.com/bradrisse) -**
+Nimiq Mining Calculator and CPU Benchmarks. **- By [@BradRisse](https://github.com/bradrisse) -**
+
+&nbsp;
+
+&nbsp;
+
+## Commerce
+
+<span class="image right"><img src="{{ "/images/shopping.jpg" | absolute_url }}" alt="" /></span>
+
+### [Nimiq Pay](https://nimiqpay.com)
+Payment button for commerce with Nimiq. **- By [@BradRisse](https://github.com/bradrisse) -**
+
 
   
 &nbsp;
@@ -65,7 +77,7 @@ Nimiq Mining Calculator. **- By [@BradRisse](https://github.com/bradrisse) -**
 
 ## Faucets
 
-<span class="image right"><img src="{{ "/images/faucet.jpeg" | absolute_url }}" alt="" /></span>
+<span class="image left"><img src="{{ "/images/faucet.jpeg" | absolute_url }}" alt="" /></span>
 
   
 &nbsp;
@@ -83,7 +95,7 @@ Nimiq Mining Calculator. **- By [@BradRisse](https://github.com/bradrisse) -**
  
 ## Misc 
     
-<span class="image left"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
+<span class="image right"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
 
 ### [Week In Review Newsletter](https://nimiq.watch/news)
 Weekly newsletter that summarizes important news and developments related to nimiq. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
