@@ -11,8 +11,9 @@ image: "/images/nodejs_1.png"
 In this guide, we describe the steps required to configure a Node.js miner for Nimiq running on a server. A step-by-step video tutorial is available [here](https://youtu.be/r2mGeq-faD4).
 Nimiq is the first blockchain built to be native to the Web platform. Since it is implemented in JavaScript,
 it is possible to mine Nimiq directly from the Web browser by simply going to a Web page
-([example for the Betanet])(https://nimiq.com/miner). However, a mining client is also implemented in
-Node.js (a cross-platform JavaScript run-time environment for executing JavaScript code server-side).
+
+([example for the Betanet](https://nimiq.com/miner)). However, a mining client is also implemented in
+Node.js, which is a cross-platform JavaScript run-time environment for executing JavaScript code server-side.
 
 Dedicated miners may want to set up a mining machine that runs the Node.js miner instead as it is faster while
 not requiring the browser to be open all the time. In this guide, we explain how to configure the Node.js miner for Nimiq.
@@ -22,8 +23,10 @@ not requiring the browser to be open all the time. In this guide, we explain how
 ## 1. Getting Started
 
 The following are the pre-requisites to running the Node.js miner for Nimiq:
+
 - A server with a public IP address. Alternatively, you <strong>may</strong> be able to use a Virtual Private Server (VPS) to mine.
 - Many VPS providers have terms-of-service that explicitly prohibit cryptocurrency mining and may suspend or limit your account upon excessive CPU usage, so if you want to do cloud mining, usually you need to get dedicated servers online.
+
 - Ubuntu Linux 16.04 LTS, although other versions should work too.
 
 Ensure that you can connect to the server via SSH from the terminal. Windows users may wish to use [PuTTY](http://www.putty.org).
@@ -188,7 +191,7 @@ $ npm run build
 
 To run the Node.js miner for Nimiq, we need a publicly routable IP, a domain name and an SSL certificate. Now we have everything we need!
 Start the client by running clients/nodejs/index.js. To adjust the number of threads, provide the option to the miner parameter in the command
-below, e.g. --miner=2 to use two threads.
+below, e.g. &#8208;&#8208;miner=2 to use two threads.
 
 ```bash
 $ cd ~/core/clients/nodejs/
@@ -203,7 +206,8 @@ Eventually you should see messages that the blocks are downloading.
 Wait until you catch up to the latest block at [Nimiq Watch](https://nimiq.watch).
 The miner is now running if you see lines that begin with the word ‘Miner’. Congratulations!
 
-As an optional step, you can use <strong>pm2</strong>, which is a process manager for Node.js applications, to
+As an optional step, you can use <strong>PM2</strong>, which is a process manager for Node.js applications, to
+
 manage and run the miner as a background service. This is described in the next section of this guide.
 
 ```bash
@@ -219,8 +223,10 @@ manage and run the miner as a background service. This is described in the next 
 
 ## 6. Configuring PM2
 
-We can keep the miner running, even after we disconnect from our SSH session, through <a href="http://pm2.keymetrics.io/">PM2</a>, which is
-a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (--) are used to separate index.js and all the parameters that we pass to it.
+
+Now we want to keep the miner running, even after we disconnect from our SSH session. We can do this through <a href="http://pm2.keymetrics.io/">PM2</a>, which is
+a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (&#8208;&#8208;) are used to separate index.js and all the parameters that we pass to it.
+
 
 ```bash
 $ sudo npm install -g pm2
@@ -238,6 +244,9 @@ $ pm2 list
 $ pm2 logs
 ```
 
+
+**Optional**: we can also make the miner restart automatically upon system restart using PM2 startup. Type the following PM2 startup command, and do what it says to generate the startup script.
+
 To experiment with different numbers of threads and see how it affects your hashrate, you need to stop the Node.js client first and change the --miner parameter, e.g. below we stop and start the miner again with an increased number of workers (from 2 to 4).
 
 ```bash
@@ -250,8 +259,6 @@ $ pm2 start index.js -- --host mynimiqminer01.cf --port 8080 \
 ## 7. Tips and Hints
 
 ### a. Auto-restarting the miner when the system restarts.
-
-We can also make the miner restart automatically upon system restart using PM2 startup. Type the following pm2 startup command, and do what it says to generate the startup script.
 
 ```bash
 $ pm2 startup systemd
@@ -273,7 +280,7 @@ $ systemctl status pm2-nimiq
            ‣ 10427 PM2 v2.9.1: God Daemon (/home/nimiq/.pm2)   
 ```
 
-Test reboot the server, and make sure that the miner is still running (via pm2 list and top).
+Test reboot the server, and make sure that the miner is still running (via PM2 list and top).
 
 ### b. Increasing the number of threads.
 
