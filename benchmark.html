@@ -4,141 +4,444 @@ title: Luna Mining Benchmark
 description: This page is a community benchmark of Luna miners.
 sitemap:
     priority: 0.7
-    lastmod: 2017-12-07
+    lastmod: 2018-02-12
     changefreq: daily
 ---
-<header class="major">
-	<h1>Luna<br />
-	Mining Benchmark</h1>
-</header>
-	<div class="table-wrapper">
-		<table class="alt">
-			<thead>
-				<tr>
-					<th>Name</th>
-                                        <th>CPU (exact model!)</th>
-                                        <th>Base Freq (GHz)</th>
-                                        <th>CACHE</th>
-                                        <th>RAM (Type)</th>
-                                        <th>RAM (GB)</th>
-                                        <th>RAM Freq (MHz)</th>
-                                        <th>MAX HASHRATE (KH/s)</th>
-                                        <th>Browser</th>
-                                        <th>OS</th>
-                                        <th>Threads (LUNA Default)</th>
-                                        <th>GPU</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>MacBook Pro (15-inch, Late 2011)</td>
-                                        <td>Intel Core i7</td>
-                                        <td>2.4</td>
-                                        <td></td>
-                                        <td>DDR3</td>
-                                        <td>8</td>
-                                        <td>1333</td>
-                                        <td>1.89</td>
-                                        <td>Chrome</td>
-                                        <td>MacOS Sierra 10.12</td>
-                                        <td></td>
-                                        <td>AMD Radeon HD 6770M</td>
-				</tr>
-				<tr>
-					<td>Gaming Rig</td>
-                                        <td>Intel Core i7 7700k</td>
-                                        <td>4.8</td>
-                                        <td>8 MB</td>
-                                        <td>DDR4</td>
-                                        <td>16</td>
-                                        <td>3200</td>
-                                        <td>8.2</td>
-                                        <td>FF Quantum</td>
-                                        <td>Windows 10</td>
-                                        <td>8</td>
-                                        <td>Nvidia GeForce GTX 1060</td>
-				</tr>
-				<tr>
-                                        <td>Acer Aspire</td>
-                                        <td>AMD Ryzen 7 1700X</td>
-                                        <td>3.4</td>
-                                        <td>16MB L3</td>
-                                        <td>DDR4</td>
-                                        <td>16</td>
-                                        <td>2400</td>
-                                        <td>12.1</td>
-                                        <td>FF Quantum</td>
-                                        <td>Windows 10 Home</td>
-                                        <td>16</td>
-                                        <td>AMD Radeon RX 480 4 GB GDDR5</td>
-                                </tr>
-                                <tr>
-                                        <td>AMD 1950X Linux Box</td>
-                                        <td>AMD Ryzen 7 1950X</td>
-                                        <td>3.4</td>
-                                        <td>32MB L3</td>
-                                        <td>DDR4</td>
-                                        <td>32</td>
-                                        <td>3200</td>
-                                        <td>25.0</td>
-                                        <td>FF Quantum</td>
-                                        <td>Centos 7</td>
-                                        <td>32</td>
-                                        <td>None</td>
-                                </tr>
-				<tr>
-                                        <td>Surface Pro 4</td>
-                                        <td>i5-6300U</td>
-                                        <td>2.4</td>
-                                        <td>3MB L3</td>
-                                        <td>DDR</td>
-                                        <td>8</td>
-                                        <td>?</td>
-                                        <td>2.2</td>
-                                        <td>FF Quantum</td>
-                                        <td>Windows 10 Pro</td>
-                                        <td>4</td>
-                                        <td>None</td>
-                                </tr>
-				<tr>
-					<td>PC</td>
-                                        <td>Intel Core i5-3570K</td>
-                                        <td>3.4</td>
-                                        <td>6 MB SmartCache</td>
-                                        <td>DDR3</td>
-                                        <td>12</td>
-                                        <td>1333</td>
-                                        <td>4.30</td>
-                                        <td>FF Quantum</td>
-                                        <td>Windows 10</td>
-                                        <td>4</td>
-                                        <td>NVIDIA GeForce GT 630</td>
-				</tr>
-				<tr>
-					<td>Lenovo P70 thinkpad signature edition</td>
-                                        <td>Intel Core i7-6820HQ</td>
-                                        <td>2.7</td>
-                                        <td>8 MB SmartCache</td>
-                                        <td>DDR4</td>
-                                        <td>32</td>
-                                        <td>2133</td>
-                                        <td>5.30</td>
-                                        <td>FF Quantum</td>
-                                        <td>Windows 10</td>
-                                        <td>4</td>
-                                        <td>NVIDIA Quadro M3000M</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="2"></td>
-				</tr>
-			</tfoot>
-		</table>
-	</div>
+<header class="major"><h1>Luna<br/>Mining Benchmark</h1></header>
+<header class="major"><h3>Click on the headers to sort the data from the table<br/>
+	Scroll down to learn how to add your benchmark</h3></header>
+<div class="table-wrapper">
+<table id="benchmark_table">
+	<tr>
+	<th  onclick="sortTable(0,1)">Name</th>
+    <th onclick="sortTable(1,1)">CPU (exact model!)</th>
+    <th onclick="sortTable(2,0)">CPU Freq (GHz)</th>
+    <th onclick="sortTable(3,0)">L3 CACHE (MB)</th>
+    <th onclick="sortTable(4,1)">RAM (Type)</th>
+    <th onclick="sortTable(5,0)">RAM (GB)</th>
+    <th onclick="sortTable(6,0)">RAM Freq (MHz)</th>
+    <th onclick="sortTable(7,0)">MAX HASHRATE (KH/s)</th>
+    <th onclick="sortTable(8,1)">Browser</th>
+    <th onclick="sortTable(9,1)">OS</th>
+    <th onclick="sortTable(10,0)">Threads (LUNA Default)</th>
+    <th onclick="sortTable(11,1)">GPU</th>
+	</tr>
+	<tr>
+		<td>MacBook Pro (15-inch, Late 2011)</td>
+    <td>Intel Core i7</td>
+    <td>2.4</td>
+    <td></td>
+    <td>DDR3</td>
+    <td>8</td>
+    <td>1333</td>
+    <td>1.89</td>
+    <td>Chrome</td>
+    <td>MacOS Sierra 10.12</td>
+    <td>4</td>
+    <td>AMD Radeon HD 6770M</td>
+	</tr>
+<tr>
+		<td>MacBook Pro (13-inch, Late 2012)</td>
+    <td>Intel Core i7</td>
+    <td>2.5 i5</td>
+    <td></td>
+    <td>DDR3</td>
+    <td>8</td>
+    <td>1600</td>
+    <td>2.19</td>
+    <td>FF Quantum</td>
+    <td>MacOS High Sierra 10.13.3</td>
+    <td>4</td>
+    <td>Intel HD Graphics 4000 1536 MB</td>
+	</tr
+	<tr>
+		<td>Gaming Rig</td>
+    <td>Intel Core i7 7700k</td>
+    <td>4.8</td>
+    <td>8</td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>3200</td>
+    <td>8.2</td>
+    <td>FF Quantum</td>
+    <td>Windows 10</td>
+    <td>8</td>
+    <td>Nvidia GeForce GTX 1060</td>
+	</tr>
+	<tr>
+    <td>Acer Aspire</td>
+    <td>AMD Ryzen 7 1700X</td>
+    <td>3.4</td>
+    <td>16</td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>2400</td>
+    <td>12.1</td>
+    <td>FF Quantum</td>
+    <td>Windows 10 Home</td>
+    <td>16</td>
+    <td>AMD Radeon RX 480 4 GB GDDR5</td>
+  </tr>
+  <tr>
+    <td>AMD 1950X Linux Box</td>
+    <td>AMD Ryzen 7 1950X</td>
+    <td>3.4</td>
+    <td>32</td>
+    <td>DDR4</td>
+    <td>32</td>
+    <td>3200</td>
+    <td>25.0</td>
+    <td>FF Quantum</td>
+    <td>Centos 7</td>
+    <td>32</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Hackintosh</td>
+    <td>Intel i7-8700K</td>
+    <td>4.3</td>
+    <td>12</td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>3000</td>
+    <td>11.6</td>
+    <td>FF Quantum</td>
+    <td>MacOS High Sierra 10.13.3</td>
+    <td>12</td>
+    <td>None</td>
+  </tr>
+	<tr>
+    <td>Surface Pro 4</td>
+    <td>i5-6300U</td>
+    <td>2.4</td>
+    <td>3</td>
+    <td>DDR</td>
+    <td>8</td>
+    <td></td>
+    <td>2.2</td>
+    <td>FF Quantum</td>
+    <td>Windows 10 Pro</td>
+    <td>4</td>
+    <td>None</td>
+  </tr>
+	<tr>
+		<td>PC</td>
+    <td>Intel Core i5-3570K</td>
+    <td>3.4</td>
+    <td>6</td>
+    <td>DDR3</td>
+    <td>12</td>
+    <td>1333</td>
+    <td>4.30</td>
+    <td>FF Quantum</td>
+    <td>Windows 10</td>
+    <td>4</td>
+    <td>NVIDIA GeForce GT 630</td>
+	</tr>
+	<tr>
+		<td>Lenovo P70 thinkpad signature edition</td>
+    <td>Intel Core i7-6820HQ</td>
+    <td>2.7</td>
+    <td>8</td>
+    <td>DDR4</td>
+    <td>32</td>
+    <td>2133</td>
+    <td>5.30</td>
+    <td>FF Quantum</td>
+    <td>Windows 10</td>
+    <td>4</td>
+    <td>NVIDIA Quadro M3000M</td>
+	</tr>
+	<tr>
+		<td>Dell 5810</td>
+    <td>Intel Xeon E5-1650 v3</td>
+    <td>3.5</td>
+    <td>10</td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>2133</td>
+    <td>6.42</td>
+    <td>FireFox</td>
+    <td>Windows 10</td>
+    <td>2</td>
+    <td>None</td>
+	</tr>
+	<tr>
+		<td>Dell 5810</td>
+    <td>Intel Xeon E5-1650 v3</td>
+    <td>3.5</td>
+    <td>10</td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>2133</td>
+    <td>4.22</td>
+    <td>Opera</td>
+    <td>Windows 10</td>
+    <td>2</td>
+    <td>None</td>
+	</tr>
+	<tr>
+    <td>Supermicro MICROCLOUD Blade</td>
+    <td>Intel® Xeon® E5-2683 v3</td>
+    <td>2.0</td>
+    <td>35</td>
+    <td>DDR4</td>
+    <td>128</td>
+    <td>2133</td>
+    <td>37</td>
+    <td>Backbone Node</td>
+    <td>Debian Jessie</td>
+    <td>28</td>
+    <td>None</td>
+  </tr>
+	<tr>
+    <td>Supermicro MICROCLOUD Blade</td>
+    <td>Intel® Xeon® E5-2683 v3</td>
+    <td>2.0</td>
+    <td>35</td>
+    <td>DDR4</td>
+    <td>128</td>
+    <td>2133</td>
+    <td>37</td>
+    <td>Backbone Node</td>
+    <td>Debian Jessie</td>
+    <td>28</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Lenovo g710</td>
+    <td>Intel Core i3-4000M</td>
+    <td>2.4</td>
+    <td>3</td>
+    <td>DDR4</td>
+    <td>6</td>
+    <td>1600</td>
+    <td>2.15</td>
+    <td>Google Chrome</td>
+    <td>Windows 8</td>
+    <td>3</td>
+    <td>GeForce GT 720M</td>
+  </tr>
+	<td>Dell Latitude E7470</td>
+    <td>2.4 GHz Intel Core i5 6300U</td>
+    <td>2.0</td>
+    <td></td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>1867</td>
+    <td>1.57</td>
+    <td>FFQ</td>
+    <td>Windows 10<</td>
+    <td>4</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>MacBook Pro (Retina, 15-inch, Mid 2015)</td>
+    <td>Intel Core i7</td>
+    <td>2.2</td>
+    <td>6</td>
+    <td>DDR3</td>
+    <td>16</td>
+    <td>1600</td>
+    <td>2.85</td>
+    <td>Chrome 63.0.3239.132 (Official Build) (64-bit)</td>
+    <td>MacOS Yosemite 10.10.5</td>
+    <td>4</td>
+    <td>Intel Iris Pro 1536 MB</td>
+  </tr>
+  <tr>
+    <td>Bladedo Custom</td>
+    <td>Intel Core i7-6800k</td>
+    <td>4.2</td>
+    <td>15</td>
+    <td>DDR4</td>
+    <td>32</td>
+    <td>2666</td>
+    <td>7.51</td>
+    <td>Chrome</td>
+    <td>Windows 10</td>
+    <td>12</td>
+    <td>GeForce GTX 1080</td>
+  </tr>
+<tr>
 
-	<hr />
-        <h2>Add yours!</h2>
-<a href="https://github.com/nimiq/community" class="image main"><img src="{{ "/images/AddBenchmark.gif" | absolute_url }}" alt="" /></a>
-	<hr />
+    <td>Frontier Custom</td>
+    <td>Intel Core i7 6700K</td>
+    <td>4.0</td>
+    <td>8</td>
+    <td>DDR3</td>
+    <td>16</td>
+    <td>797</td>
+    <td>3.79</td>
+    <td>Chrome</td>
+    <td>Windows 10</td>
+    <td>8</td>
+    <td>GeForce GTX 1050</td>
+</tr>
+<tr>
 
+	<td>Gaming Rig</td>
+	<td>Intel Core i7 4790</td>
+    	<td>3.8</td>
+    	<td>8</td>
+    	<td>DDR3</td>
+    	<td>8</td>
+    	<td>1333</td>
+    	<td>3.61</td>
+    	<td>Chrome</td>
+    	<td>Windows 10</td>
+    	<td>8</td>
+    	<td>Nvidia GeForce GTX 970</td>
+
+</tr>
+	<tr>
+    <td>Custom i7 Gaming Rig</td>
+    <td>Intel Core i7 4770K</td>
+    <td>3.5</td>
+    <td>8</td>
+    <td>DDR3</td>
+    <td>16</td>
+    <td>1866 (CL9)</td>
+    <td>12.25</td>
+    <td>Skypool Miner</td>
+    <td>Windows 10</td>
+    <td>8</td>
+    <td>GTX 780</td>
+  </tr>
+	<tr>
+    <td>Level 3 Helmet's Miner</td>
+    <td>AMD Ryzen Threadripper 1950x</td>
+    <td>3.8</td>
+    <td>32</td>
+    <td>DDR4</td>
+    <td>16</td>
+    <td>2666 (CL14)</td>
+    <td>57.5</td>
+    <td>Node.JS</td>
+    <td>Windows 10</td>
+    <td>30</td>
+    <td>GTX 750Ti</td>
+  </tr>
+  <tr>
+    <td>Ryzen 8 Cores</td>
+    <td>AMD Ryzen 7 1800X</td>
+    <td>3.6</td>
+    <td>16</td>
+    <td>DDR4</td>
+    <td>8</td>
+    <td>3600 (CL18)</td>
+    <td>24</td>
+    <td>Node.js</td>
+    <td>Debian</td>
+    <td>8</td>
+    <td>None</td>
+  </tr>
+  <tr>
+    <td>Intel 4 Cores</td>
+    <td>Intel Core i5-7500</td>
+    <td>3.4</td>
+    <td>6</td>
+    <td>DDR4</td>
+    <td>8</td>
+    <td>4000 (CL19)</td>
+    <td>14</td>
+    <td>Node.js</td>
+    <td>Debian</td>
+    <td>4</td>
+    <td>None</td>
+  </tr>
+<tr>
+        <td>Miao's Mining Rig</td>
+        <td>Intel Pentium G3258</td>
+        <td>3.8</td>
+        <td>3</td>
+        <td>DDR3</td>
+        <td>4</td>
+        <td>1600</td>
+        <td>5.5</td>
+        <td>Skypool Miner</td>
+        <td>Ubuntu</td>
+        <td>2</td>
+        <td>None</td>
+    </tr>
+    <tr>
+        <td>Miao's Mining Rig</td>
+        <td>AMD FX-8350</td>
+        <td>4.2</td>
+        <td>8</td>
+        <td>DDR3</td>
+        <td>4</td>
+        <td>1600</td>
+        <td>12</td>
+        <td>Skypool Miner</td>
+        <td>Ubuntu</td>
+        <td>8</td>
+        <td>None</td>
+    </tr>
+    <tr>
+        <td>Miao's Mining Rig</td>
+        <td>Xeon X5650</td>
+        <td>2.66</td>
+        <td>12</td>
+        <td>DDR3</td>
+        <td>8</td>
+        <td>1333</td>
+        <td>21</td>
+        <td>Skypool Miner</td>
+        <td>Ubuntu</td>
+        <td>24</td>
+        <td>None</td>
+    </tr>
+</table>
+</div>	
+	<hr>
+     	<h2>Add yours!</h2>
+	<a href="https://youtu.be/j05KF6AK3j0"><h3>Click here for a step-by-step tutorial</h3></a>
+	<a><div style="position:relative;padding-bottom:57%"><iframe src="/images/UpdatedNimiqBenchmarkGif.webm" frameborder="0" scrolling="no" width="100%" height="100%" style="position:absolute;top:0;left:0;" allowfullscreen></iframe></div></a>
+	<hr>
+<script>
+function sortTable(n,t) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  var comparex, comparey;
+  table = document.getElementById("benchmark_table");
+  switching = true;
+  dir = "asc"; 
+  while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+	if (t==0){
+	comparex = parseInt(x.innerHTML.valueOf());
+	comparey = parseInt(y.innerHTML.valueOf());
+	} else {
+	comparex = x.innerHTML.toLowerCase();
+	comparey = y.innerHTML.toLowerCase();
+	}
+      if (dir == "asc") {
+        if (comparex > comparey) {
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (comparex < comparey) {
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchcount ++;      
+    } else {
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
