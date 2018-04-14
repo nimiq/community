@@ -10,9 +10,7 @@ image: "/images/nodejs_1.png"
 
 In this guide, we describe the steps required to configure a Node.js miner for Nimiq running on a server.
 Nimiq is the first blockchain built to be native to the Web platform. Since it is implemented in JavaScript,
-it is possible to mine Nimiq directly from the Web browser by simply going to a Web page
-
-([example for the Betanet](https://nimiq.com/miner)). However, a mining client is also implemented in
+it is possible to mine Nimiq directly from the Web browser by simply going to a [Website](https://nimiq.com/miner). However, a mining client is also implemented in
 Node.js, which is a cross-platform JavaScript run-time environment for executing JavaScript code server-side.
 
 Dedicated miners may want to set up a mining machine that runs the Node.js miner instead as it is faster while
