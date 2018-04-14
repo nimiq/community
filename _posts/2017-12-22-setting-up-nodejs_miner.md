@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Running a Node.js Miner for Nimiq"
-date:   2018-04-13
+date:   2018-04-14
 excerpt: "A simple guide on how to set up the Node.js miner for Nimiq"
 image: "/images/nodejs_1.png"
 ---
@@ -89,7 +89,7 @@ that the registration has been processed -- usually after 15 minutes or so.
 <div class="image main"><img src="/images/nodejs_3.png" alt=""></div>
 
 The free DNS provider (FreeNOM) does not like it if we are squatting on domain that does not have an accessible website, so we are also going to set up a placeholder page
-using [Nginx](https://www.nginx.com). If you are using a paid domain, you can skip this step (but you should still open port 80 and 443 anyway for the Node.js miner to work).
+using [Nginx](https://www.nginx.com). If you are using a paid domain, you can skip this step (but you should still open port 80 and 443 anyway for the Freenom to work).
 Connect to the server again via SSH and type the following commands to install Nginx:
 
 ```bash
@@ -194,7 +194,7 @@ $ yarn build
 ```
 
 To run the Node.js miner for Nimiq, we need a publicly routable IP, a domain name and an SSL certificate. Now we have everything we need!
-Start the client by running clients/nodejs/index.js. To adjust the number of threads, provide the option to the miner parameter in the command
+Start the client by running clients/nodejs/nimiq. To adjust the number of threads, provide the option to the miner parameter in the command
 below, e.g. &#8208;&#8208;miner=2 to use two threads.
 
 ```bash
@@ -229,12 +229,12 @@ manage and run the miner as a background service. This is described in the next 
 
 
 Now we want to keep the miner running, even after we disconnect from our SSH session. We can do this through <a href="http://pm2.keymetrics.io/">PM2</a>, which is
-a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (&#8208;&#8208;) are used to separate index.js and all the parameters that we pass to it.
+a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (&#8208;&#8208;) are used to separate `nimiq` and all the parameters that we pass to it.
 
 
 ```bash
 $ sudo npm install -g pm2
-$ pm2 start index.js -- --host mynimiqminer01.cf --port 8080 \
+$ pm2 start nimiq -- --host mynimiqminer01.cf --port 8080 \
 --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
 --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
 --miner=2 --network='main' --statistics=60
@@ -335,7 +335,7 @@ Test reboot the server, and make sure that the miner is still running (via PM2 l
 
 This only applies when you increase the number of workers to a large number, but your hashrate isn't going up. In this case, it may be because you're hitting [the default limit on the number of workers from libuv](http://docs.libuv.org/en/v1.x/threadpool.html). @Marvin from discord says that:
 
-> "v8's libuv limits the thread pool for AsyncWorker's by default, depending on your system configuration and node build. You can overwrite its default using the environment variable UV_THREADPOOL_SIZE i.e. run the node using env UV_THREADPOOL_SIZE=<threads> node index.js --miner=<threads> <args>. Note that using all resources of an machine can render it unusable... 👍"
+> "v8's libuv limits the thread pool for AsyncWorker's by default, depending on your system configuration and node build. You can overwrite its default using the environment variable UV_THREADPOOL_SIZE i.e. run the node using env UV_THREADPOOL_SIZE=<threads> nimiq --miner=<threads> <args>. Note that using all resources of an machine can render it unusable... 👍"
 
 In this case, set the environmental variable `UV_THREADPOOL_SIZE` to a larger value before running the Node.js miner.
 
