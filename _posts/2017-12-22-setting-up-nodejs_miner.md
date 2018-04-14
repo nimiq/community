@@ -1,18 +1,16 @@
 ---
 layout: post
 title:  "Running a Node.js Miner for Nimiq"
-date:   2017-12-22
+date:   2018-04-14
 excerpt: "A simple guide on how to set up the Node.js miner for Nimiq"
 image: "/images/nodejs_1.png"
 ---
 
 ## Nimiq Mining via Node.js
 
-In this guide, we describe the steps required to configure a Node.js miner for Nimiq running on a server. A step-by-step video tutorial is available [here](https://youtu.be/r2mGeq-faD4).
+In this guide, we describe the steps required to configure a Node.js miner for Nimiq running on a server.
 Nimiq is the first blockchain built to be native to the Web platform. Since it is implemented in JavaScript,
-it is possible to mine Nimiq directly from the Web browser by simply going to a Web page
-
-([example for the Betanet](https://nimiq.com/miner)). However, a mining client is also implemented in
+it is possible to mine Nimiq directly from the Web browser by simply going to a [Website](https://nimiq.com/miner). However, a mining client is also implemented in
 Node.js, which is a cross-platform JavaScript run-time environment for executing JavaScript code server-side.
 
 Dedicated miners may want to set up a mining machine that runs the Node.js miner instead as it is faster while
@@ -91,7 +89,7 @@ that the registration has been processed -- usually after 15 minutes or so.
 <div class="image main"><img src="/images/nodejs_3.png" alt=""></div>
 
 The free DNS provider (FreeNOM) does not like it if we are squatting on domain that does not have an accessible website, so we are also going to set up a placeholder page
-using [Nginx](https://www.nginx.com). If you are using a paid domain, you can skip this step (but you should still open port 80 and 443 anyway for the Node.js miner to work).
+using [Nginx](https://www.nginx.com). If you are using a paid domain, you can skip this step (but you should still open port 80 and 443 anyway for the Freenom to work).
 Connect to the server again via SSH and type the following commands to install Nginx:
 
 ```bash
@@ -173,6 +171,12 @@ Next, using Node Package Manager (npm), we install Gulp -- a toolkit for automat
 $ sudo npm install -g gulp
 ```
 
+And in the same way install `yarn`.
+
+```bash
+$ sudo npm install -g yarn
+```
+
 Finally we can clone the Github repository for nimiq, and checkout the <strong>release</strong> branch.
 
 ```bash
@@ -182,23 +186,23 @@ $ cd core
 $ git checkout release
 ```
 
-Install and build the project using npm.
+Install and build the project using **yarn**.
 
 ```bash
-$ npm install
-$ npm run build
+$ yarn 
+$ yarn build
 ```
 
 To run the Node.js miner for Nimiq, we need a publicly routable IP, a domain name and an SSL certificate. Now we have everything we need!
-Start the client by running clients/nodejs/index.js. To adjust the number of threads, provide the option to the miner parameter in the command
+Start the client by running clients/nodejs/nimiq. To adjust the number of threads, provide the option to the miner parameter in the command
 below, e.g. &#8208;&#8208;miner=2 to use two threads.
 
 ```bash
 $ cd ~/core/clients/nodejs/
-$ node index.js --host mynimiqminer01.cf --port 8080 \
+$ nimiq --host mynimiqminer01.cf --port 8080 \
 --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
 --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
---miner=2
+--miner=2 --network='main' --statistics=60
 ```
 
 Take note of the first two lines produced by the node command. They show your wallet address that the miner is using.
@@ -225,15 +229,15 @@ manage and run the miner as a background service. This is described in the next 
 
 
 Now we want to keep the miner running, even after we disconnect from our SSH session. We can do this through <a href="http://pm2.keymetrics.io/">PM2</a>, which is
-a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (&#8208;&#8208;) are used to separate index.js and all the parameters that we pass to it.
+a process manager for Node.js application. Quit the miner (Ctrl-C) and type the commands below. Note now two dashes (&#8208;&#8208;) are used to separate `nimiq` and all the parameters that we pass to it.
 
 
 ```bash
 $ sudo npm install -g pm2
-$ pm2 start index.js -- --host mynimiqminer01.cf --port 8080 \
+$ pm2 start nimiq -- --host mynimiqminer01.cf --port 8080 \
 --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
 --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
---miner=2
+--miner=2 --network='main' --statistics=60
 ```
 
 Ensure that the miner is running correctly under PM2 by looking at the list of applications managed by PM2 and also from the log files.
@@ -251,14 +255,59 @@ To experiment with different numbers of threads and see how it affects your hash
 
 ```bash
 $ pm2 stop all
-$ pm2 start index.js -- --host mynimiqminer01.cf --port 8080 \
+$ pm2 start nimiq -- --host mynimiqminer01.cf --port 8080 \
 --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
 --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
---miner=4
+--miner=4 --network='main' --statistics=60
 ```
 ## 7. Tips and Hints
 
-### a. Auto-restarting the miner when the system restarts.
+### a. Nimiq Configuration Options
+
+```bash
+        Usage:
+            node index.js --config=CONFIG [options]
+            node index.js --host=HOSTNAME --port=PORT --cert=SSL_CERT_FILE --key=SSL_KEY_FILE [options]
+            node index.js --dumb [options]
+
+        Configuration:
+          --cert=SSL_CERT_FILE       Certificate file to use. CN should match HOSTNAME.
+          --dumb                     Set up a dumb node. Other nodes will not be able\n
+                                     to connect to this node, but you may connect to\n
+                                     others.
+          --host=HOSTNAME            Configure hostname.
+          --key=SSL_KEY_FILE         Private key file to use.
+          --port=PORT                Specifies which port to listen on for connections.
+        
+        Options:
+          --help                     Show this usage instructions.
+          --log[=LEVEL]              Configure global log level. Not specifying a log
+                                     level will enable verbose log output.
+          --log-tag=TAG[:LEVEL]      Configure log level for a specific tag.
+          --miner[=THREADS]          Activate mining on this node. The miner will be set
+                                     up to use THREADS parallel threads.
+          --passive                  Do not actively connect to the network and do not
+                                     wait for connection establishment.
+          --rpc[=PORT]               Start JSON-RPC server on port PORT (default: 8648).
+          --metrics[=PORT]           Start Prometheus-compatible metrics server on port
+                   [:PASSWORD]       PORT (default: 8649). If PASSWORD is specified, it
+                                     is required to be used for username "metrics" via
+                                     Basic Authentication.
+          --statistics[=INTERVAL]    Output statistics like mining hashrate, current
+                                     account balance and mempool size every INTERVAL
+                                     seconds.
+          --type=TYPE                Configure the consensus type to establish, one of
+                                     full (default), light, or nano.
+          --wallet-seed=SEED         Initialize wallet using SEED as a wallet seed.
+          --wallet-address=ADDRESS   Initialize wallet using ADDRESS as a wallet address
+                                     The wallet cannot be used to sign transactions when
+                                     using this option.
+          --extra-data=EXTRA_DATA    Extra data to add to every mined block.
+          --network=NAME             Configure the network to connect to, one of
+                                     main (default), test, dev, or bounty.
+```
+
+### b. Auto-restarting the miner when the system restarts.
 
 ```bash
 $ pm2 startup systemd
@@ -282,23 +331,25 @@ $ systemctl status pm2-nimiq
 
 Test reboot the server, and make sure that the miner is still running (via PM2 list and top).
 
-### b. Increasing the number of threads.
+### c. Increasing the number of threads.
 
 This only applies when you increase the number of workers to a large number, but your hashrate isn't going up. In this case, it may be because you're hitting [the default limit on the number of workers from libuv](http://docs.libuv.org/en/v1.x/threadpool.html). @Marvin from discord says that:
 
-> "v8's libuv limits the thread pool for AsyncWorker's by default, depending on your system configuration and node build. You can overwrite its default using the environment variable UV_THREADPOOL_SIZE i.e. run the node using env UV_THREADPOOL_SIZE=<threads> node index.js --miner=<threads> <args>. Note that using all resources of an machine can render it unusable... 👍"
+> "v8's libuv limits the thread pool for AsyncWorker's by default, depending on your system configuration and node build. You can overwrite its default using the environment variable UV_THREADPOOL_SIZE i.e. run the node using env UV_THREADPOOL_SIZE=<threads> nimiq --miner=<threads> <args>. Note that using all resources of an machine can render it unusable... 👍"
 
 In this case, set the environmental variable `UV_THREADPOOL_SIZE` to a larger value before running the Node.js miner.
 
 ```bash
 $ export UV_THREADPOOL_SIZE=4
-$ pm2 start index.js -- --host mynimiqminer01.cf --port 8080 \
+$ pm2 start nimiq -- --host mynimiqminer01.cf --port 8080 \
 --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
 --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
---miner=4
+--miner=4 --network='main' --statistics=60
 ```
 
-### c. Running the miner locally (not on VPS).
+**Note:** You can configure 
+
+### d. Running the miner locally (not on VPS).
 
 #### 1) With a domain name
 There are two options to run a miner on your local network. With a domain name is the best option (see explaination from @Soeren in 2)).
@@ -332,7 +383,7 @@ To run it on a personal system and without a domain name, you will need to gener
 
 > Also, it's possible to run the nodejs miner locally with just localhost and a self signed certificate, but it's just not recommended, because if everybody would do it, the network would centralize, as no clients that run as localhost can connect to each other only to public domains. But it's possible. I don't know if anything will be done to prevent that or to fix the not-reachable problem, but at least for testing the nodejs client, you can run it locally without a vps or domain.
 
-### d. Import wallet.
+### e. Import wallet.
 
 If you want to <strong>use your own wallet address</strong> you need to get the private key. 
  Visit your [Nimiq wallet](https://nimiq.com/wallet), open the console and run:
@@ -344,11 +395,11 @@ If you want to <strong>use your own wallet address</strong> you need to get the 
  
  ```bash
  $ cd ~/core/clients/nodejs/
- $ node index.js --host mynimiqminer01.cf --port 8080 \
+ $ nimiq --host mynimiqminer01.cf --port 8080 \
  --key /etc/letsencrypt/live/mynimiqminer01.cf/privkey.pem \
  --cert /etc/letsencrypt/live/mynimiqminer01.cf/fullchain.pem \
  --wallet-seed YOUR_PRIVATE_KEY \
- --miner=2
+ --miner=2 --network='main' --statistics=60
  ``` 
 
 ---
