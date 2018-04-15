@@ -177,7 +177,7 @@ And in the same way install `yarn`.
 $ sudo npm install -g yarn
 ```
 
-Finally we can clone the Github repository for nimiq, and checkout the <strong>release</strong> branch.
+Finally we can clone the Github repository for nimiq, and checkout the <strong>master</strong> branch.
 
 ```bash
 $ cd ~
