@@ -79,20 +79,17 @@ Payment button for commerce with Nimiq. **- By [@BradRisse](https://github.com/b
 
 <span class="image left"><img src="{{ "/images/faucet.jpeg" | absolute_url }}" alt="" /></span>
 
-  
-&nbsp;
-  
  
-   
-&nbsp;
-  
-  
-  
-&nbsp;
+### [Nimiq Faucet](https://nimiq-faucet.surge.sh/)
+Get 0.00004 NIM every 7.5 minutes. **- By [@Smittyvb](https://github.com/Smittyvb) -**
+
 
   
 &nbsp;
- 
+
+&nbsp;
+
+
 ## Misc 
     
 <span class="image right"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span> 
