@@ -12,7 +12,7 @@ sitemap:
 
 # Mining Pools
 
-**Following a true decentralized path, Nimiq does not provide an official pool but the implementation of the [Nimiq Pool Server](https://github.com/nimiq-network/mining-pool) for community members to implemnt their own pool**. 
+**Following a true decentralized path, Nimiq does not provide an official pool but the implementation of the [Nimiq Pool Server](https://github.com/nimiq-network/mining-pool) for community members to implement their own pool**. 
 
 Below is a list of Mining Pools managed by community members. You can talk to pools members in the Pools Section of [Nimiq Discord](https://discord.gg/92qaVKH).
 
