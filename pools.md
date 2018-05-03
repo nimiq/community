@@ -47,6 +47,10 @@ Mine as One and Enjoy the SUSHI!
 
 **Website:** `https://nimiq.skypool.org/`
 
+- [Skypool](https://nimiq.skypool.org/) is the **FIRST** pool of Nimiq.
+- Skypool mined the **FIRST** block of Nimiq.
+- Skypool has [self-developed open source client](https://github.com/skypool-org/skypool-nimiq-miner) that maximize your hashrate for all platforms.
+
 ### [NIMIQ.WATCH](https://nimiq.watch)
 
 **Website:** `https://nimiq.watch`
