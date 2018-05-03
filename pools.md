@@ -27,6 +27,7 @@ Below is a list of Mining Pools managed by community members. You can talk to po
 - [**`--pool=pool.nimiqminer.com:2096`**](#nimiqminer)
 - [**`--pool=pool.porkypool.com:8444`**](#porkypool)
 - [**`--pool=pool.bhlynd.nz:8444`**](#bhlyndpool)
+- [**`--pool=pool.nimiqchain.info:8444`**](#bhlyndpool)
 
 ## Mining Pools Details
 
@@ -40,6 +41,8 @@ NIMPOOL is a non-profit pool, operated on behalf of the Nimiq community. This po
 
 **Website:** `https://sushipool.com/`
 
+Mine as One and Enjoy the SUSHI!
+
 ### [SKYPOOL](https://nimiq.skypool.org/)
 
 **Website:** `https://nimiq.skypool.org/`
@@ -47,6 +50,8 @@ NIMPOOL is a non-profit pool, operated on behalf of the Nimiq community. This po
 ### [NIMIQ.WATCH](https://nimiq.watch)
 
 **Website:** `https://nimiq.watch`
+
+Mine as part of the nimiq.watch mining pool and get shares of the mined block rewards according to your hash rate.
 
 ### [NIMIQPOOL](https://beta.nimiqpool.com/)
 
@@ -60,9 +65,13 @@ NIMPOOL is a non-profit pool, operated on behalf of the Nimiq community. This po
 
 **Website:** `https://beeppool.org/`
 
+To use this pool a registration is required in [BeepPool's website](https://goo.gl/ZU5oHQ).It's hard to find a block on your own, join Beeppool and get rewards for your effort
+
 ### [PORKYPOOL](https://porkypool.com/)
 
 **Website:** `https://porkypool.com/`
+
+Porky Pool is built for scale, stability and free bacon.
 
 ### [BHLYNDPOOL](https://pool.bhlynd.nz/)
 
@@ -74,3 +83,7 @@ NIMPOOL is a non-profit pool, operated on behalf of the Nimiq community. This po
 - The pool fee is set at 1%.
 - Automatic payout will occur every 6 hours with confirmed balance of 25NIM or higher.
 - Contact @Bhlynd in Nimiq Discord for any issues.
+
+### [NIMIQCHAIN](https://nimiqchain.info/)
+
+Join the nimiqchain.info mining pool and get shares of the mined block rewards.
