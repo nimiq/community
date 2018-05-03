@@ -22,9 +22,9 @@ Below is a list of Mining Pools managed by community members. You can talk to po
 - [**`--pool=up.nimpool.io:8444`**](#nimpool)
 - [**`--pool=eu.nimpool.io:8444`**](#nimpool)
 - [**`--pool=eu.sushipool.com:443`**](#sushipool)
-- [**`--pool=pool.nimiq.watch:8443`**](#nimiq-watch)
+- [**`--pool=pool.nimiq.watch:8443`**](#nimiqwatch)
 - [**`--pool=node.nimiqpool.com:8444`**](#nimiqpool)
-- [**`--pool=pool.nimiqminer.com:2096`**](#nimiq-miner)
+- [**`--pool=pool.nimiqminer.com:2096`**](#nimiqminer)
 - [**`--pool=pool.porkypool.com:8444`**](#porkypool)
 - [**`--pool=pool.bhlynd.nz:8444`**](#bhlyndpool)
 
