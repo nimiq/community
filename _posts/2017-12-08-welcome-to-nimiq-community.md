@@ -18,7 +18,7 @@ Nimiq is an open source project and all the members of our Team are hardcore bel
 
 ## Proof of Sushi
 
-If you are part of our [Discord](https://discord.gg/55rHkGz) you probably remember this announcement:
+If you are part of our [Discord](https://discord.gg/92qaVKH) you probably remember this announcement:
 
 <pre><code>Nimiq is an Open Source Project and we appreciate all contributions. 
 It is with the help of our community that  we push on forward to Crypto Mass Adoption. 
