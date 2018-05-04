@@ -10,7 +10,7 @@ sitemap:
 # How to contribute?
 Our community is based in a strong contributive open source spirit, explained in our **[welcome post](http://nimiq.community/blog/welcome-to-nimiq-community/)**. 
 
-Below is a list of community projects with their respective leader/manager (whom you can contact in our [Discord](https://discord.gg/55rHkGz)). 
+Below is a list of community projects with their respective leader/manager (whom you can contact in our [Discord](https://discord.gg/92qaVKH)). 
 
 ## Blockchain Explorers
 
@@ -20,7 +20,7 @@ Below is a list of community projects with their respective leader/manager (whom
 Nimiq blockchain explorer and charting tool. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -** 
 
 ### [Nimiq Mopsus](https://nimiq.mopsus.com)
-Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [@Kenblazer](https://discord.gg/55rHkGz) -**
+Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [@Kenblazer](https://discord.gg/92qaVKH) -**
 
 &nbsp;
 

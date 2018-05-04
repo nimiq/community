@@ -16,4 +16,4 @@ Build the project
 
 ## How to contribute
 
-Join our community in [Discord](https://discord.gg/55rHkGz), read the overview information of Nimiq and introduce yourself in #community-projects channel. You can talk with any Nimiq_user or you can reach the maintainer: Richy, [Nimiq's Community Manager](https://nimiq.com/team/).
+Join our community in [Discord](https://discord.gg/92qaVKH), read the overview information of Nimiq and introduce yourself in #community-projects channel. You can talk with any Nimiq_user or you can reach the maintainer: Richy, [Nimiq's Community Manager](https://nimiq.com/team/).
