@@ -3,6 +3,7 @@ layout: post
 title:  "How to send NIM with the Node.js API"
 date:   2018-05-07
 excerpt: "The basics of the Nimiq API"
+image: "/images/NimiqTransfer.png"
 ---
 
 ## Installing the Nimiq API
