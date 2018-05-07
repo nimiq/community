@@ -89,7 +89,7 @@ async function nimiqCode() {
   var transaction = wallet.createTransaction(
   Nimiq.Address.fromUserFriendlyAddress("NQ92 589S 4CN6 U0FX NQRV NHQP TQNV CF1U BVHU"),
   , 20000, 140, consensus.blockchain.head.height);
-  await consensus.mempool.pushTransaction(transaction);
+  await consensus.relayTransaction(transaction);
 }
 nimiqCode();
 ```
