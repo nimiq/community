@@ -28,6 +28,7 @@ Below is a list of Mining Pools managed by community members. You can talk to po
 - [**`--pool=pool.porkypool.com:8444`**](#porkypool)
 - [**`--pool=pool.bhlynd.nz:8444`**](#bhlyndpool)
 - [**`--pool=pool.nimiqchain.info:8444`**](#bhlyndpool)
+- [**`--pool=pool.nimbus.fun:8443`**](#nimbus)
 
 ## Mining Pools Details
 
@@ -91,3 +92,15 @@ Porky Pool is built for scale, stability and free bacon.
 ### [NIMIQCHAIN](https://nimiqchain.info/)
 
 Join the nimiqchain.info mining pool and get shares of the mined block rewards.
+
+### [NIMBUS](https://nimbus.fun/)
+
+- A nice web portal to monitor your workers and payouts; https://nimbus.fun
+- Anonymity while mining; we don't disclose your address when mining a block unlike most pools! See an example at: https://mopsus.com/block/42224
+- Anonymity for your workers! You need to log in with your address and password to be able to see your worker information!
+- Fast and secure pool and API servers!
+- HOURLY PAYOUT! Tested and working perfectly! As long as your payout balance is above 10 NIM, you will get your payout in the coming hour!
+- Named workers! Naming your workers is as easy as appending `--extra-data="<worker name>"` and it will show up in the dashboard with it's hashrate!
+- Currently 0% Pool Fee! Yes, **ZERO** fees while we get our hands dirty, making the mining experience stable and easy for everyone!
+- Incredibly fast hashrates! You'd be surprised with the hashrate from our pre-compiled miners!
+- Super easy installation on Linux; literally a one-liner (with command-line generator on the website)! More operating systems support coming real soon!
