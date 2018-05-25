@@ -17,7 +17,7 @@ Below is a list of community projects with their respective leader/manager (whom
 <span class="image left"><img src="{{ "/images/MagnifyingGlass.jpeg" | absolute_url }}" alt="" /></span>
 
 ### [NIMIQ.WATCH](https://nimiq.watch)
-Nimiq blockchain explorer and charting tool. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
+Nimiq blockchain explorer and charting tool. **- By [@Soeren](https://t.me/NimiqSoeren) -**
 
 ### [Nimiq Mopsus](https://nimiq.mopsus.com)
 Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [@Kenblazer](https://discord.gg/92qaVKH) -**
@@ -32,10 +32,6 @@ Nimiq blockchain explorer with detailed data about mining and hashrate. **- By [
 
 ### [Nimiq Desktop Wallet](https://github.com/bradrisse/nimiq-desktop-wallet)
 A Nimiq Desktop Wallet. **- By [@BradRisse](https://github.com/bradrisse) -**
-
-### [Nimiq Browser Extension Wallet Manager](https://chrome.google.com/webstore/detail/nima-nimiq-wallet-manager/jfijpdoopiaiahclhnfoibiohfnjpcfo?hl=en)
-This extension lets you manage all your Nimiq wallets directly in your browser.  **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
-
 
 &nbsp;
 
@@ -93,9 +89,6 @@ Get 0.00004 NIM every 7.5 minutes. **- By [@Smittyvb](https://github.com/Smittyv
 ## Misc
 
 <span class="image right"><img src="{{ "/images/random.jpg" | absolute_url }}" alt="" /></span>
-
-### [Week In Review Newsletter](https://nimiq.watch/news)
-Weekly newsletter that summarizes important news and developments related to nimiq. **- By [@Soeren](https://t.me/Not_in_Nimiq_team) -**
 
 ### [Nimiq price](https://nimiqprice.com)
 Site with information related to Nimiq price. **- By [@Sebastian](https://t.me/sebjalm) -**
