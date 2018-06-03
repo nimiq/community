@@ -27,7 +27,10 @@ Below is a list of Mining Pools managed by community members. You can talk to po
 - [**`--pool=pool.nimiqminer.com:2096`**](#nimiqminer)
 - [**`--pool=pool.porkypool.com:8444`**](#porkypool)
 - [**`--pool=pool.bhlynd.nz:8444`**](#bhlyndpool)
-- [**`--pool=pool.nimiqchain.info:8444`**](#bhlyndpool)
+- [**`--pool=us-east.nimiqchain.info:8443`**](#nimiqchain)
+- [**`--pool=eu.nimiqchain.info:8443`**](#nimiqchain)
+- [**`--pool=asia.nimiqchain.info:8443`**](#nimiqchain)
+- [**`--pool=aus.nimiqchain.info:8443`**](#nimiqchain)
 - [**`--pool=pool.nimbus.fun:8443`**](#nimbus)
 
 ## Mining Pools Details
@@ -89,9 +92,29 @@ Porky Pool is built for scale, stability and free bacon.
 - Automatic payout will occur every 6 hours with confirmed balance of 25NIM or higher.
 - Contact @Bhlynd in Nimiq Discord for any issues.
 
-### [NIMIQCHAIN](https://nimiqchain.info/)
+### [NIMIQCHAIN](https://pool.nimiqchain.info/)
 
-Join the nimiqchain.info mining pool and get shares of the mined block rewards.
+**Website:** `https://pool.nimiqchain.info/`
+
+Big update news for #nimiqchain! We have recently undergone a full update and rework of almost the entire pool! If you’re looking to start mining or perhaps for a new pool we’d love to have you. Our amazing list of features has been expanded and now includes
+
+- New and updated backend
+- New infrastructure including **7global servers**
+- Updated mining clients for  **faster hash rates, custom names, and server location options (Windows, Linux, MacOS)**
+- A reworked website for **clean and easy access to pool stats**
+- Reimplemented and overhauled **user stats**
+- A **0%** pool fee
+- **No registration**
+- Multiple databases
+- **Robust backend**
+- **High quality servers**
+- Dedicated staff
+- An **amazing** and helpful **community**
+- Fast and competitive hashrates
+- Discord channel -> https://discord.gg/WKqyWkJ
+- Twitter channel -> https://twitter.com/Nimiqchain
+
+And finally, if you join our pool you help **decentralize the network which is beneficial to the whole community and currency**
 
 ### [NIMBUS](https://nimbus.fun/)
 
