@@ -12,7 +12,7 @@ If you want to use the Nimiq API in your own projects, you'll first need to incl
 First, you'll need to [install the Nimiq compiled binary](https://nimiq.com/#downloads) on you computer. Next, open a new Node.js file. Put this in it:
 ```js
 const Nimiq = require("/usr/share/nimiq/app/lib/node.js"); // For Ubuntu/Debian
-const Nimiq = require("C:\Program Files\Nimiq\lib\node.js");  // For Windows
+const Nimiq = require("C:\\Program Files\\Nimiq\\lib\\node.js");  // For Windows
 ```
 
 Alternatively, you can install it with ``npm``.
