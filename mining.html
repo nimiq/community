@@ -1,0 +1,193 @@
+---
+layout: default
+section_id: about
+skills:
+  - title: Skypool
+    percent: 47
+  - title: BeepPool
+    percent: 45
+  - title: SushiPool
+    percent: 4
+  - title: Nimbus
+    percent: 1
+  - title: PorkyPool
+    percent: 1
+
+
+members:
+  - name: SkyPool
+    desc:
+      The first pool of Nimiq
+    avatar: images/pools/skypool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://nimiq.skypool.org/
+      - icon_class: fa fa-comments
+        url: https://discord.gg/fPr6Vxs
+      - icon_class: fa fa-at
+        url: mailto:pool@skypool.org
+
+  - name: BeepPool
+    desc:
+      High efficient pool
+    avatar: images/pools/beeppool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://beeppool.org/
+      - icon_class: fa fa-comments
+        url: https://discord.gg/QrgNzU5
+
+  - name: SushiPool
+    desc:
+      Easy to use pool with great support
+    avatar: images/pools/sushipool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://beeppool.org/
+      - icon_class: fa fa-telegram
+        url: https://telegram.me/SushiPool
+
+  - name: Nimbus
+    desc:
+      Nimbus Pool.
+    avatar: images/pools/nimbus.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://nimbus.fun/
+
+  - name: NimiqChain
+    desc:
+      NimiqChain Pool.
+    avatar: images/pools/nimiqchain.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://nimiqchain.info/
+      - icon_class: fa fa-comments
+        url: https://discord.gg/ju3u4Dp
+      - icon_class: fa fa-twitter
+        url: https://twitter.com/Nimiqchain
+
+  - name: Nimiq Pool
+    desc:
+      NimiqPool Pool.
+    avatar: images/pools/nimiqpool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://nimiqpool.com/
+
+  - name: NimiqWatch
+    desc:
+      Nimiq Watch Pool.
+    avatar: images/pools/nimiqwatch.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://nimiq.watch/
+
+  - name: iNimiq
+    desc:
+      iNimiq Pool
+    avatar: images/pools/inimiq.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://inimiq.com/
+      - icon_class: fa fa-telegram
+        url: https://t.me/iNimiq
+
+  - name: NimPool
+    desc:
+      NimPool.
+    avatar: images/pools/nimpool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: http://nimpool.io/
+
+  - name: PhilPool
+    desc:
+      Philpool.
+    avatar: images/pools/philpool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://philpool.com/
+
+  - name: SiriusPool
+    desc:
+      Sirius Pool.
+    avatar: images/pools/siriuspool.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: http://siriuspool.com/
+---
+<script>
+window.onload = function(){
+	var output = "";
+	var poolperc = "";
+	jQuery.get('https://poolwatch.info/api/pools', function(result){ 
+		for (var poolcount = 1; poolcount < result.length; poolcount++) {
+			poolperc = result[poolcount]["hashRate"] * 100 / result[0]["hashRate"];
+			if (poolperc.toFixed(3) > 0){
+				output = output + " <li> <h4 style=''> " + result[poolcount]["pool"] + "<strong> " + poolperc.toFixed(3) + "%</strong> </h4> <p class='highlighted' data-percent='" + poolperc.toFixed(3) + "' style='width:" + poolperc.toFixed(3) + "%; overflow: visible;'></p> </li>";
+				console.log(result[poolcount]["pool"]);
+			}	
+		}
+		document.getElementById("pools").innerHTML = output;
+	})
+}
+
+</script>
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+	    <h3>Pool Server</h3>
+      <div class='spacing'></div>
+      <p>Following a true decentralized path, Nimiq does not provide an official pool but the implementation of the <a href='https://github.com/nimiq-network/mining-pool'>Nimiq Mining Pool Server</a> for community members to implement their own pool.</p>
+	<a class='button' target="_self" href='#poollist'>Pool List</a>
+    </div>
+    <div class='medium-6 columns'>
+      <h3>Hashrate Distribution</h3>
+      <div class='spacing'></div>
+      <div class='mod modBarGraph'>
+        <ul class="bars">
+		<li id="pools">Fetching info from poolwatch...</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='two spacing'></div>
+<hr>
+<div class='two spacing' id="poollist"></div>
+<div class='two spacing'></div>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h2>Pools</h2>
+    <div class='spacing'></div>
+  </div>
+</div>
+<div class='row'>
+  {% for member in page.members %}
+    <div class='small-6 medium-3 large-3 columns'>
+      <div class='mod modTeamMember style-2'>
+        <div class='member'>
+          <img class="avatar" alt="" src="{{site.url}}/{{member.avatar}}" />
+          <div class='overlay'>
+            <ul class='socials'>
+              {% for social in member.socials %}
+                <li>
+                  <a href='{{social.url}}'>
+                    <i class='{{social.icon_class}}'></i>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        <h3>{{member.name}}</h3>
+        <p class='position'>{{member.position}}</p>
+        <p>{{member.desc}}</p>
+        <div class='two spacing'></div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<div class='three spacing'></div>
