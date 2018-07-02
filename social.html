@@ -1,0 +1,104 @@
+---
+layout: default
+section_id: projects
+main_channels:
+  - icon_class: fa fa-telegram
+    title: Nimiq Telegram Group
+    url: https://telegram.me/Nimiq
+    desc:
+      Official Telegram Group with active discussionin English.
+  - icon_class: fa fa-paper-plane-o
+    title: Nimiq News
+    url: https://telegram.me/NimiqNews
+    desc:
+      Official news channel over Telegram.
+  - icon_class: fa fa-twitter
+    title: Twitter
+    url: https://twitter.com/nimiq
+    desc:
+      Twitter account of Team Nimiq.
+  - icon_class: fa fa-youtube
+    title: Youtube
+    url: https://www.youtube.com/c/nimiq
+    desc:
+      Youtube channel of Nimiq Team with frequent vlog updates.
+  - icon_class: fa fa-reddit
+    title: Reddit
+    url: https://www.reddit.com/r/Nimiq/
+    desc:
+      Reddit with all things Nimiq.
+  - icon_class: fa fa-bitcoin
+    title: Bitcointalk
+    url: https://bitcointalk.org/index.php?topic=1952324.0
+    desc:
+      BitcoinTalk thread for Nimiq.
+  - icon_class: fa fa-comments
+    title: Discord
+    url: https://discord.gg/92qaVKH
+    desc:
+      Nimiq Discord, maybe the most active channel. Discussion regarding community projects, mining pools, development and  a lot more .
+  - icon_class: fa fa-medium
+    title: Medium
+    url: https://medium.com/nimiq-network
+    desc:
+      Official Medium Blog from Team Nimiq.
+
+other_channels:
+  - icon_class: fa fa-telegram
+    title: Nimiq Brasil
+    url: https://telegram.me/nimiqbr
+    desc:
+       Grupo de Telegram de Nimiq para usuários brasileiro.
+  - icon_class: fa fa-telegram
+    title: Nimiq Malasyan
+    url: https://telegram.me/NimiqMalaysia
+    desc:
+      Malasyan speaking group.
+
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Main channels</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for channel in page.main_channels %}
+      <div class='medium-3 large-3 columns'>
+        <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index }}'>
+	  <div onclick="window.open('{{channel.url}}', '{{channel.title}}')" style="cursor: pointer" class='icon-text-circle'>
+		  <i class='{{channel.icon_class}}'></i>
+            <h3>{{channel.title}}</h3>
+            <p>{{channel.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <hr>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <h3>Other Social Channels</h3>
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modBoxedTextSlider'>
+        <div class='boxes'>
+          {% for channel in page.other_channels %}
+            <div onclick="window.open('{{channel.url}}', '{{channel.title}}')" style="cursor: pointer" class='box' style='background: #f9f9f9;'>
+              <i class='{{channel.icon_class}}'></i>
+              <h4>{{channel.title}}</h4>
+              <p>{{channel.desc}}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
