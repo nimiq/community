@@ -109,27 +109,12 @@ clients:
   - img: images/exchanges/latokenlogo.jpg
     url: https://bit.ly/2IyYY8s
 ---
-<script>
-window.onload = function(){
-var output = "";
-jQuery.get('https://api.nimiqx.com/price/', function(result){ 
-	var color1h = "green";
-	var color24h = "green";
-	if (result["percent_change_1h"]["btc"] < 0){color1h="red";}
-	if (result["percent_change_24h"]["btc"] < 0){color24h="red";}
-	jQuery.get('https://api.nimiqx.com/supply/', function(result2){
-        console.log(result["circulating_supply"]);
-	output = "<strong>Price</strong> $" + result["usd"] + " / " + result["btc"] + " BTC &emsp; | &emsp; <strong>%Change (BTC) <span style='color:"+ color1h+ "'>" +  result["percent_change_1h"]["btc"] + "% 1h</span></strong> / <strong><span style='color:" + color24h + "'>" + result["percent_change_24h"]["btc"] + "% 24h</span></strong> &emsp; | &emsp; <strong>Circulating Supply</strong> " + result2["circulating_supply"].toFixed(1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " NIM ";
-        document.getElementById("price").innerHTML = output;
-        })
-	})
-}
 </script>
 <div class='full no-padding'>
   <div class='spacing'></div>
   <div class='row'>
     <div class='large-12 columns'>
-	    <p id='price' style="color:black; font-size:1.2rem;"><strong>Fetching Price...</strong> <p>
+	    <p id='price' style="color:black; font-size:1.2rem;"><strong></strong> <p>
       <div class='mod modBoxedSlider'>
         <div class='slides'>
           {% for slide in page.slides %}
