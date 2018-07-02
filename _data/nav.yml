@@ -1,0 +1,12 @@
+- name: Social
+  path: social.html
+  section_id: social
+- name: Academy
+  path: /academy
+  section_id: academy
+- name: Projects
+  path: projects.html
+  section_id: projects
+- name: Mining
+  path: mining.html
+  section_id: mining
