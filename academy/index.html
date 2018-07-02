@@ -1,0 +1,39 @@
+---
+layout: default
+section_id: academy
+---
+
+{% for post in paginator.posts %}
+{% if post.type == "course" %}
+  <div class='big mod modBlogPost no_bg'>
+    <div class='images' style="width:30%">
+      {% for image in post.images %}
+        <div class='image'><img alt="" src="{{site.url}}/{{image}}" /></div>
+      {% endfor %}
+    </div>
+    <div style="padding-left: 33%">
+      <p class='info'>
+      <h3><a href="{{post.url}}">{{post.title}}</a></h3>
+      <p>{{post.excerpt}}</p>
+    </div>
+    <div class='content'>
+      <p class='info'>
+        <span>
+          You will learn:
+          {% for skill in post.skills %}
+	  <a href="{{post.url}}">{{skill}}</a>
+            {% unless forloop.last %}
+                ,
+            {% endunless %}
+          {% endfor %}
+        </span>
+      </p>
+    </div>
+  </div>
+  <hr>
+  <div class='two spacing'></div>
+{% endif %}
+{% endfor %}
+
+
+<div class='four spacing'></div>

@@ -1,0 +1,145 @@
+---
+layout: default
+section_id: projects
+works:
+  - image: images/projects/nimiqwatch.jpg
+    title: Nimiq Watch
+    link_to: https://nimiq.watch/
+    class: explorer
+    desc: Blockchain Exporer by @Soeren
+  - image: images/projects/mopsus.jpg
+    title: Nimiq Mopsus
+    link_to: https://nimiq.mopsus.com/
+    class: explorer
+    desc: Blockchain Explorer by KenBlazer
+  - image: images/projects/nologo.jpg
+    title: Nimiq Desktop Wallet
+    link_to: https://github.com/bradrisse/nimiq-desktop-wallet
+    class: wallet
+    desc: Nimiq Desktop wallet built using Electrum.
+  - image: images/projects/coinmiq.jpg
+    title: Coinmiq
+    class: miner
+    desc: Visit  https://github.com/joewandy/coinmiq to join.
+  - image: images/projects/nimex.jpg
+    title: Nimex
+    link_to: https://www.nimex.app/
+    class: exchange
+    desc: Nimex is the first dedicated exchange to trade NIM using Ethereum.
+  - image: images/projects/nimipet.jpg
+    title: Nimipet
+    link_to: https://nimipet.com/
+    class: game
+    desc: Tamagotchi-like game based on Nimiq.
+  - image: images/projects/nimiqfunder.jpg
+    title: Nimiq Funder
+    link_to: https://github.com/rlafranchi/nimiq-funder
+    class: miner
+    desc: Nimiq plugin for website built with Vue. Allow users to fund a website by mining for it.
+  - image: images/projects/nimiqx.jpg
+    title: NimiqX
+    link_to: https://api.nimiqx.com/
+    class: api
+    desc: Public API 
+  - image: images/projects/nimiqgames.jpg
+    title: Nimiq Games
+    link_to: http://www.nimiqgames.ca/
+    class: game
+    desc: Blockchain Explorer by KenBlazer
+  - image: images/projects/nologo.jpg
+    title: Nimiq.supply
+    link_to: http://nimiq.supply/
+    class: explorer
+    desc: Block explorer focused on circulating supply.
+  - image: images/projects/nologo.jpg
+    title: Nimiq Tip Bot for Discord
+    link_to: https://discordbots.org/bot/450635240373747724
+    class: bot
+    desc: A cryptocurrency tipbot for Discord that tips NIM using the Nimiq blockchain.
+  - image: images/projects/nologo.jpg
+    title: Nimiq Tip bot for Reddit
+    link_to: https://www.reddit.com/r/NimiqTipbot/comments/8mpksa/nimiqtipbot_howto_and_faq/
+    class: bot
+    desc: A cryptocurrency tipbot for Reddit that tips NIM using the Nimiq blockchain.
+  - image: images/projects/nologo.jpg
+    title: Nimiq Faucet
+    link_to: https://nimiq-faucet.surge.sh/
+    class: faucet
+    desc: A faucet for NIM.
+  - image: images/projects/nimiqchain.jpg
+    title: Nimiq Chain
+    link_to: https://nimiqchain.info/
+    class: explorer
+    desc: A Nimiq block explorer, web miner and pool.
+  - image: images/projects/nologo.jpg
+    title: NimiqMiner
+    link_to: https://nimiqminer.com/#/
+    class: miner
+    desc: A Nimiq mining calculator.
+  - image: images/projects/nologo.jpg
+    title: Nimiq OTC
+    link_to: https://buynimiq.app/
+    class: commerce
+    desc: A Nimiq Over The Counter Tool.
+  - image: images/projects/nologo.jpg
+    title: NimiqWP
+    link_to: https://github.com/pom75/nimiqWP
+    class: miner 
+    desc: Nimiq mining extension for wordpress.
+  - image: images/projects/poolwatch.jpg
+    title: PoolWatch
+    link_to: https://poolwatch.info/
+    class: api
+    desc: Nimiq pool stats site.
+
+
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+	  <li>
+            <a data-cat='api' href='#'>API</a>
+          </li>
+	  <li>
+            <a data-cat='wallet' href='#'>Wallet</a>
+          </li>
+          <li>
+            <a data-cat='explorer' href='#'>Blockchain Explorer</a>
+          </li>
+          <li>
+            <a data-cat='faucet' href='#'>Faucet</a>
+          </li>
+          <li>
+            <a data-cat='commerce' href='#'>Commerce</a>
+          </li>
+          <li>
+            <a data-cat='miner' href='#'>Miner</a>
+          </li>
+        </ul>
+      </div>
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+        {% for work in page.works %}
+          <li class='{{work.class}}'>
+            <a href='{{work.link_to}}'>
+              <img alt="" src="{{site.url}}/{{work.image}}" />
+              <div class='overlay' style='background: rgba(143, 221, 115, 0.8);'>
+                <div class='thumb-info'>
+                  <h3>{{work.title}}</h3>
+                  <p>{{work.desc}}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class='four spacing'></div>
+  <div class='four spacing'></div>
+</div>
