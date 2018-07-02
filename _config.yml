@@ -3,7 +3,7 @@ title: Nimiq Community
 email: community@nimiq.com
 description: "A compendium of community Nimiq-related content"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://community.nimiq.space"
+url: "https://nimiq.community"
 twitter_username: nimiq
 github_username:  nimiq
 
