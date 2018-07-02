@@ -1,9 +1,13 @@
 ---
 layout: post
+section_id: academy
 title:  "How to send NIM with the Node.js API"
-date:   2018-05-07
-excerpt: "The basics of the Nimiq API"
-image: "/images/NimiqTransfer.png"
+date:   2018-05-07 08:00:00
+excerpt: The basics of the Nimiq API
+type: lesson
+author: Smitop
+images:
+  - "/images/academy/sendnimnodejs.jpg"
 ---
 
 ## Installing the Nimiq API

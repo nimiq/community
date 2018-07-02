@@ -1,9 +1,14 @@
 ---
 layout: post
+section_id: academy
 title:  "Running a Node.js Miner for Nimiq"
-date:   2018-04-14
-excerpt: "A simple guide on how to set up the Node.js miner for Nimiq"
-image: "/images/nodejs_1.png"
+date:   2018-04-14 10:00:00
+excerpt: A simple guide on how to set up the Node.js miner for Nimiq
+type: lesson
+course: nimiqprogrammerbasic
+author: Porkachu
+images: 
+  - "/images/academy/nodejscode.jpg"
 ---
 
 ## Nimiq Mining via Node.js

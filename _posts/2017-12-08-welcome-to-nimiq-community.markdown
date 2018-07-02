@@ -1,9 +1,15 @@
 ---
 layout: post
+section_id: academy
 title:  "Welcome to Nimiq Community Site"
-date:   2017-12-08
-excerpt: "Let me welcome you to this site and tell you what is all about"
-image: "/images/NimiqCommunity.png"
+date:   2017-12-08 10:20:00
+excerpt: Let me welcome you to this site and tell you what is all about
+type: lesson
+course: nimiq101
+courseimg: images/academy/nimiq101.jpg
+author: Richy
+images: 
+  - "images/academy/nimiqcommunity.png"
 ---
 
 ## Welcome to Nimiq Community

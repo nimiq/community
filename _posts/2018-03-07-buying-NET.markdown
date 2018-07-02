@@ -1,9 +1,15 @@
 ---
 layout: post
+section_id: academy
 title:  "How To Buy NET Tokens (Liqui)"
-date:   2018-03-07
-excerpt: "With mainnet approaching, this is how to buy some last minute NET"
-image: "/images/liqui.png"
+date:   2018-03-07 06:00:00
+excerpt: With mainnet approaching, this is how to buy some last minute NET
+type: lesson
+course: nimiq101
+author: Glenn_HODL
+courseimg: "/images/academy/liquichart.jpg"
+images: 
+  - "/images/academy/liquichart.jpg"
 ---
 
 ## How To Buy NET Tokens On Liqui.io

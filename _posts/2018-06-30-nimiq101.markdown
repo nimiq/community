@@ -1,0 +1,40 @@
+---
+layout: post
+section_id: academy
+title:  "Nimiq 101: The Basics"
+date:   2018-05-08 10:20:00
+excerpt: In this course you'll learn the basic terminology and usage of Nimiq. How to buy, store and send NIM in a safe way. Creating and backing up an account is also covered.
+type: course
+skills:
+  - buy NIM in different exchanges
+  - create a NIM account
+  - send NIM to another account
+  - backup a NIM account
+course: nimiq101
+courseimg: images/academy/nimiq101.jpg
+author: Richy
+images: 
+  - "images/academy/nimiq101.jpg"
+  - "images/academy/nimiqcommunity.jpg"
+---
+
+#### Introduction
+
+##### [Welcome to Nimiq Community](http://community.nimiq.space/logo%20design/2017/12/08/welcome-to-nimiq-community.html)
+##### [Staying safe in our Discord](http://community.nimiq.space/logo%20design/tricks%20and%20tips/2018/03/13/Discord.html)
+
+#### Buying NET
+
+##### [Buying NET in Liqui](http://community.nimiq.space/logo%20design/tricks%20and%20tips/2018/03/07/buying-NET.html)
+
+#### Buying Nimiq
+
+##### [Buying NIM in Tradesatoshi](http://community.nimiq.space/index.html#Education)
+
+#### Nimiq Safe
+
+##### What is the Safe?
+
+##### Deposit NIM to your Safe account
+
+##### Send NIM to a different account

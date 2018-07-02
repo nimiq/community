@@ -1,9 +1,14 @@
 ---
 layout: post
+section_id: academy
 title:  "Discord: Get Involved, But Stay Secure!"
-date:   2018-03-13
-excerpt: "Come and join the Nimiq community on our Discord server"
-image: "/images/Discord.png"
+date:   2018-03-13 10:00:00
+excerpt: Come and join the Nimiq community on our Discord server
+type: lesson
+course: nimiq101
+author: Glen_HODL
+images:
+  - "/images/academy/discord.jpg"
 ---
 
 ## The Nimiq Community
