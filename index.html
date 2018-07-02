@@ -1,121 +1,316 @@
 ---
-layout: null
-title: Nimiq Communitiy - Community compendium of Nimiq-related content.
-description: Our main goal in Nimiq is to bring mainstream adoption to Blockchain payments and a big task of this challenge is to build a big community with a strong and engaging culture. This is the place for that community to get together and create.
-sitemap:
-    priority: 1.0
-    lastmod: 2017-11-02
-    changefreq: weekly
+layout: default
+section_id: home
+slides:
+  - bg: images/banner/latoken.jpg
+    title: LAToken listed NIM/ETH and NIM/LA
+    tagline: New Exchange
+  - bg: images/banner/ledger.jpg
+    title: Hardware
+    tagline: Nimiq Live on Ledger Nano S
+  - bg: images/banner/meetup.jpg
+    title: Meet Us
+    tagline: Join or organize a Nimiq meetup
+works:
+  - image: images/NimiqDiscord2.jpg
+    title: Social Channels
+    desc: Get in touch with project leads and other community members.
+    class: graphic-design
+    url: http://community.nimiq.space/social.html
+  - image: images/logoLedger.jpg
+    title: Ledger Support
+    desc: Use NIM with your Ledger Nano.
+    class: web-design print
+    url: https://nimiq.github.io/
+  - image: images/mining.jpg
+    title: Start Mining
+    desc: Find information about the different mining pools and how to start mining.
+    class: brand
+    url: http://community.nimiq.space/mining.html
+  - image: images/logoGithub.jpg
+    title: 100% Open-Source
+    desc: Start your own project or contribute with an existing one.
+    class: development
+    url: https://github.com/nimiq-network
+projects:
+  - image: images/projects/mopsus.jpg
+    title: Nimiq Mopsus
+    desc: Block Explorer
+    class: graphic-design
+    url: https://nimiq.mopsus.com/
+  - image: images/projects/nimipet.jpg
+    title: Nimipet
+    desc: Web-based Tamagotchi game built using Nimiq.
+    class: web-design print
+    url: https://nimipet.com/
+  - image: images/projects/poolwatch.jpg
+    title: Pool Watch
+    desc: Collects and displays pool stats
+    class: brand
+    url: https://poolwatch.info/#
+  - image: images/projects/nimex.jpg
+    title: Decentralized Exchange
+    desc: NIM/ETH Decentralized Exchange.
+    class: development
+    url: https://www.nimex.app/
+  - image: images/projects/nimiqgames.jpg
+    title: Nimiq Games
+    desc: Browser multiplayer games on top of Nimiq.
+    class: development
+    url: http://www.nimiqgames.ca/
+  - image: images/projects/nimiqfunder.jpg
+    title: Nimiq Funder
+    desc: Addon to fund websites with Nimiq.
+    class: development
+    url: https://github.com/rlafranchi/nimiq-funder
+  - image: images/projects/coinmiq.jpg
+    title: Coinmiq WebMiner
+    desc: JavaScript miner that can be easily embedded in your website.
+    class: development
+    url: http://coinmiq.com/
+  - image: images/projects/nimiqx.jpg
+    title: NimiqX API
+    desc: API for Nimiq
+    class: development
+    url: https://api.nimiqx.com/
+
+services:
+  - icon_class: fa fa-graduation-cap
+    title: Education
+    desc: Discover the Nimiq project and ecosystem by enrolling in the Academy and increasing your crypto-skills.
+  - icon_class: fa fa-users
+    title: Collaboration
+    desc: Discover the community-led projects already being developed.
+  - icon_class: fa fa-flask
+    title: Innovation
+    desc: Engage with the Nimiq community; join hackathons, create your own projects and much more.
+
+bars:
+  - title: Collaborative Tools
+    percent: 60
+  - title: Blockchain
+    percent: 78
+  - title: Web
+    percent: 70
+  - title: Cryptography
+    percent: 40
+  - title: HTLC
+    percent: 20
+  - title: JavaScript
+    percent: 87
+  - title: Rust
+    percent: 4
+
+clients:
+  - img: images/exchanges/tradesatoshi.jpg
+    url: https://tradesatoshi.com/Exchange/?market=NIM_BTC
+  - img: images/exchanges/nimex.jpg
+    url: https://www.nimex.app/
+  - img: images/exchanges/latokenlogo.jpg
+    url: https://bit.ly/2IyYY8s
 ---
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-    {% include head.html %}
+<script>
+window.onload = function(){
+var output = "";
+jQuery.get('https://api.nimiqx.com/price/', function(result){ 
+	var color1h = "green";
+	var color24h = "green";
+	if (result["percent_change_1h"]["btc"] < 0){color1h="red";}
+	if (result["percent_change_24h"]["btc"] < 0){color24h="red";}
+	jQuery.get('https://api.nimiqx.com/supply/', function(result2){
+        console.log(result["circulating_supply"]);
+	output = "<strong>Price</strong> $" + result["usd"] + " / " + result["btc"] + " BTC &emsp; | &emsp; <strong>%Change (BTC) <span style='color:"+ color1h+ "'>" +  result["percent_change_1h"]["btc"] + "% 1h</span></strong> / <strong><span style='color:" + color24h + "'>" + result["percent_change_24h"]["btc"] + "% 24h</span></strong> &emsp; | &emsp; <strong>Circulating Supply</strong> " + result2["circulating_supply"].toFixed(1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " NIM ";
+        document.getElementById("price").innerHTML = output;
+        })
+	})
+}
+</script>
+<div class='full no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+	    <p id='price' style="color:black; font-size:1.2rem;"><strong>Fetching Price...</strong> <p>
+      <div class='mod modBoxedSlider'>
+        <div class='slides'>
+          {% for slide in page.slides %}
+            <div class='slide'>
+              <img alt="" src="{{slide.bg}}" />
+              <div class='caption'>
+                <p>{{slide.title}}</p>
+                <h2>{{slide.tagline}}</h2>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='full no-padding'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p style='font-size: 1.8rem; color: black;'>
+       Talented and diverse group of enthusiasts building innovative projects on top of <b><a href="https://nimiq.com">Nimiq Blockchain</a>.</p>
+      </p>
+      <div class='spacing'></div>
+    </div>
+  </div>
+</div>
+<div class='two spacing'></div>
+<div class='two spacing'></div>
+<div class='two spacing'></div>
+<div class="intro"; id="intro">
+<div class="introspace"></div>
+<div class='row'>
+  {% for service in page.services %}
+    <div class='medium-4 large-4 columns'>
+      <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
+        <div class='icon-text-circle-white'>
+	  <a href="#{{service.title}}">
+	  <i class='{{service.icon_class}}'></i>
+          <h3 style="color: white;">{{service.title}}</h3>
+	  </a>
+	  <p style='font-size: 1.5rem;color:#C0C0C0'>{{service.desc}}</p>
+	  </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+</div>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+	<a name="Education"></a>
+	<div class='two spacing'></div>
+	<div class='two spacing'></div>
+    <h2  name="education">
+      Education
+      /
+      <a href='/academy' name="Education">Join the Academy</a>
+    </h2>
+    <p style='font-size: 1.5rem;' >The Nimiq platform is fundamentally designed for ease of use and mass adoption. Enroll in the Nimiq Academy to learn all about the project, its potential use cases, and how both the team and community are using Nimiq to bring blockchain to the masses.</p>
+    <div class='spacing'></div>
+  </div>
+</div>
 
 
-	</head>
-	<body class="is-loading">
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h3>Courses</h3>
+    <div class='spacing'></div>
+    <div class='mod modTestimonials simple'>
+      <div class='row'>
+        <div class='small-12 columns'>
+          <div class='items'>
+            {% for t in site.posts  %}
+	    {% if t.type=="course"%}
+              <div class='item'>
+                <div class='author'>
+		  <a href="{{t.url}}"><img alt="" src="{{t.courseimg}}" /></a>
+		  <p class='author-name'>
+                    <strong>
+                      {{t.title}}
+                    </strong><br />
+		    {{t.excerpt | truncatewords: 30}}
+		  </p><br />
+                </div>
+		<p class='quote'>{{t.text}}</p>
+	      </div>
+		          {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-            <h1>{{site.title}}</h1>
-						<h2>By the Community, for the Community</h2>
-						<p>Unofficial compendium of Nimiq-related content.<br />
-						<a href="https://nimiq.com/">Nimiq</a> is a frictionless peer-to-peer payment protocol for the World Wide Web.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-
-            {% include nav.html %}
-
-						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://telegram.me/{{site.instagram}}" class="icon fa-comment" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://www.youtube.com/embed/j05KF6AK3j0">How to contribute and join our community</a></h2>
-									<p>With only a few clicks and almost no technical knowledge, you can contribute and get involved in our Community <br />
-                    We'll teach you how :) <br />
-                    Our community is filled with friendly, smart and skillful users. Let's see what we can build together! </p>
-								</header>
-								<iframe width="80%" height="480" src="https://www.youtube.com/embed/j05KF6AK3j0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-                {% for post in site.posts limit:4 %}
-                {% assign mod4 = forloop.index | modulo: 4 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod4 == 0 %}
-                  <article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% endif %}
-                {% endfor %}
-
-							</section>
-
-						<!-- Footer -->
-							<footer>
-                <ul class="actions">
-                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-                </ul>
-							</footer>
-
-					</div>
-
-				<!-- Footer -->
-        {% include foot.html %}
-
-			</div>
-
-		<!-- Scripts -->
-		{% include scripts-main.html %}
-    {% include tracking.html %}
-
-	</body>
-</html>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+	<a name="Collaboration"></a>
+	<div class='two spacing'></div>
+	<div class='two spacing'></div>
+    <h2>
+      Collaboration
+      /
+      <a href='projects.html' name="Collaboration">Discover the Nimiq Ecosystem</a>
+    </h2>
+    <p style='font-size: 1.5rem;'>Community engagement and positive collaboration are central to the Nimiq philosophy. The community has already developed projects ranging from block explorers and mining pools to decentralised exchanges and games, here are a few highlights:</p>
+    <div class='spacing'></div>
+  </div>
+  <div class='mod modGallery'>
+    <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+      {% for project in page.projects %}
+        <li class='{{project.class}}'>
+	<a href="{{project.url}}">
+            <img alt="" src="{{project.image}}" />
+            <div class='overlay' style='background: rgba(251, 208, 138, 0.8);'>
+              <div class='thumb-info'>
+		<h3><b>{{project.title}}</b></h3>
+		<p><b>{{project.desc}}</b></p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class='two spacing'></div>
+<hr>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+	<a name="Innovation"></a>
+	<div class='two spacing'></div>
+	<div class='two spacing'></div>
+    <h2>
+      Innovation
+      /
+      <a href='official-projects.html'>Get Involved!</a>
+    </h3>
+    <p>Whether it's joining a mining pool, taking part in a hackathon or launching your own project using Nimiq, the community would be pleased to welcome you. Nimiq has strong links with a number of educational institutions and its own Ledger Nano S app, so get involved and help us grow the ecosystem!</p>
+    <div class='spacing'></div>
+  </div>
+  <div class='mod modGallery'>
+    <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
+      {% for work in page.works %}
+        <li class='{{work.class}}'>
+	<a href="{{work.url}}">
+            <img alt="" src="{{work.image}}" />
+            <div class='overlay' style='background: rgba(251, 208, 138, 0.8);'>
+              <div class='thumb-info'>
+		<h3><b>{{work.title}}</b></h3>
+		<p><b>{{work.desc}}</b></p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class='two spacing'></div>
+<div class='two spacing'></div>
+<div class='row'>
+  <div class='large-12 columns'>
+    <h2>Exchanges</h2>
+    <div class='spacing'></div>
+    <div class='mod modClients' data-slides_to_show='5'>
+      <div class='clients'>
+        {% for client in page.clients %}
+	<div><a href="{{client.url}}"><img alt="" src="{{client.img}}" /></a></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class='full no-padding' style='background: #ffffff'>
+  <div class='two spacing'></div>
+  <div class='two spacing'></div>
+</div>

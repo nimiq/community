@@ -1,63 +1,17 @@
-# Site
-title:              Nimiq Community
-bio:                'A compendium of community Nimiq-related content'
-description:        "A compendium of community Nimiq-related content"
-locale:             en_US
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://nimiq.community"
+# Site settings
+title: Nimiq Community
+email: community@nimiq.com
+description: "A compendium of community Nimiq-related content"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://community.nimiq.space"
+twitter_username: nimiq
+github_username:  nimiq
 
-defaults:
-- scope:
-    path: ''
-    type: posts
-  values:
-    permalink: "/blog/:title/"
-    layout: post
-    author:
+# Build settings
+markdown: kramdown
 
-# Jekyll
-permalink:          /blog/:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..6
-  enable_coderay:   false
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
-
-# Comments
-disqus_shortname:   nimiq
-
-# Social
-analytics-id:       "default"
-twitter:            nimiq
-facebook:           nimiqcoin
-instagram:          nimiq
-github:             nimiq/community
-
-# personal
-location:           Nimiq
-phone:              777-77-7777
-email:              community@nimiq.com
-
+paginate: 100
+paginate_path: "academy/page:num"
+encoding: utf-8
 # Gems
-gems:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
-
-paginate: 6
-paginate_path: "/blog/page:num/"
-
-jekyll-mentions:
-    base_url: https://nimiq.community
-
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
+# gems: [jekyll-paginate]
