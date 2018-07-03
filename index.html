@@ -11,7 +11,7 @@ slides:
   - bg: images/banner/meetup.jpg
     title: Meet Us
     tagline: Join or organize a Nimiq meetup
-works:
+innovations:
   - image: images/innovation/discord.jpg
     title: Social Channels
     desc: Get in touch with project leads and other community members.
@@ -74,7 +74,7 @@ projects:
     class: development
     url: https://api.nimiqx.com/
 
-services:
+mains:
   - icon_class: fa fa-graduation-cap
     title: Education
     desc: Discover the Nimiq project and ecosystem by enrolling in the Academy and increasing your crypto-skills.
@@ -85,23 +85,7 @@ services:
     title: Innovation
     desc: Engage with the Nimiq community; join hackathons, create your own projects and much more.
 
-bars:
-  - title: Collaborative Tools
-    percent: 60
-  - title: Blockchain
-    percent: 78
-  - title: Web
-    percent: 70
-  - title: Cryptography
-    percent: 40
-  - title: HTLC
-    percent: 20
-  - title: JavaScript
-    percent: 87
-  - title: Rust
-    percent: 4
-
-clients:
+exchangess:
   - img: images/exchanges/tradesatoshi.jpg
     url: https://tradesatoshi.com/Exchange/?market=NIM_BTC
   - img: images/exchanges/nimex.jpg
@@ -162,15 +146,15 @@ jQuery.get('https://api.nimiqx.com/price/', function(result){
 <div class="intro"; id="intro">
 <div class="introspace"></div>
 <div class='row'>
-  {% for service in page.services %}
+  {% for main in page.mains %}
     <div class='medium-4 large-4 columns'>
       <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
         <div class='icon-text-circle-white'>
-	  <a href="#{{service.title}}">
-	  <i class='{{service.icon_class}}'></i>
-          <h3 style="color: white;">{{service.title}}</h3>
+	  <a href="#{{main.title}}">
+	  <i class='{{main.icon_class}}'></i>
+          <h3 style="color: white;">{{main.title}}</h3>
 	  </a>
-	  <p style='font-size: 1.5rem;color:#C0C0C0'>{{service.desc}}</p>
+	  <p style='font-size: 1.5rem;color:#C0C0C0'>{{main.desc}}</p>
 	  </div>
       </div>
     </div>
@@ -278,14 +262,14 @@ jQuery.get('https://api.nimiqx.com/price/', function(result){
   </div>
   <div class='mod modGallery'>
     <ul class='gallery large-block-grid-4 medium-block-grid-3 seperated small-block-grid-2'>
-      {% for work in page.works %}
-        <li class='{{work.class}}'>
-	<a href="{{work.url}}">
-            <img alt="" src="{{work.image}}" />
+      {% for entry in page.innovations %}
+        <li class='{{entry.class}}'>
+	<a href="{{entry.url}}">
+            <img alt="" src="{{entry.image}}" />
             <div class='overlay' style='background: rgba(251, 208, 138, 0.8);'>
               <div class='thumb-info'>
-		<h3><b>{{work.title}}</b></h3>
-		<p><b>{{work.desc}}</b></p>
+		<h3><b>{{entry.title}}</b></h3>
+		<p><b>{{entry.desc}}</b></p>
               </div>
             </div>
           </a>
@@ -302,8 +286,8 @@ jQuery.get('https://api.nimiqx.com/price/', function(result){
     <div class='spacing'></div>
     <div class='mod modClients' data-slides_to_show='5'>
       <div class='clients'>
-        {% for client in page.clients %}
-	<div><a href="{{client.url}}"><img alt="" src="{{client.img}}" /></a></div>
+        {% for ex in page.exchanges %}
+	<div><a href="{{ex.url}}"><img alt="" src="{{ex.img}}" /></a></div>
         {% endfor %}
       </div>
     </div>
