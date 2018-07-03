@@ -41,6 +41,9 @@ A Nimiq Desktop Wallet. **- By [@BradRisse](https://github.com/bradrisse) -**
 
 <span class="image left"><img src="{{ "/images/mine.jpg" | absolute_url }}" alt="" /></span>
 
+### [Nimiq Desktop Miner](https://nimiqdesktop.com)
+Optimized Desktop GUI Miner for Windows. No config files, just enter wallet and start mining. Supports AVX-512, AVX2, AVX, ESS2 Vector Extensions. **- By [@kunani](https://twitter.com/kunani) -**
+
 ### [Coinmiq](http://www.coinmiq.com)
 Embeddable Nimiq miner for your website. **- By [@Porkachu](https://t.me/porkachu) -**
 
