@@ -33,6 +33,13 @@ Install it
 
 <code>python3 setup.py install</code>
 
+Move to the examples directory
+
+<code>mv examples/</code>
+
 Test the shell example
 
+python3 shell.py
+
+If everything is working fine you should be able to query Blockchain data now.
 <code>accounts()</code>
