@@ -18,5 +18,21 @@ images:
   - "images/academy/nodejscode.jpg"
 ---
 
+<div class='links'>
+  <h3>Lessons</h3>
+  <ul>
+    {% for post in site.posts %}
+      {% if forloop.index > 10 %}
+        {% break %}
+      {% endif %}
+     {% if post.type=="lesson" and post.course==page.course and post.title == page.title%}
+       <li><a href="{{post.url}}" style="color:#f7b747;">{{post.title | capitalize}}</a></li>
+     {% elsif post.type=="lesson" and post.course==page.course and post.title != page.title %}
+       <li><a href="{{post.url}}">{{post.title | capitalize}}</a></li>
+     {% endif %}
+     {% endfor %}
+  </ul>
+</div>
+
 ##### [Running a NodeJS Nimiq Node](http://nimiq.community/2018/04/14/setting-up-nodejs_miner.html)
 
