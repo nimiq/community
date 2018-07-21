@@ -18,5 +18,5 @@ images:
   - "images/academy/nodejscode.jpg"
 ---
 
-##### [Running a NodeJS Nimiq Node](http://community.nimiq.space/tutorial/tricks%20and%20tips/2018/04/14/setting-up-nodejs_miner.html)
+##### [Running a NodeJS Nimiq Node](http://nimiq.community/2018/04/14/setting-up-nodejs_miner.html)
 
