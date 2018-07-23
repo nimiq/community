@@ -1,0 +1,15 @@
+# One seed address per line.
+# Lines starting with # and blank lines are ignored.
+# The last line can be an optional signature (hex encoded).
+
+# Seed address formats:
+#    wss://<hostname>:<port>/<public_key>
+#    ws://<hostname|ip>:<port>/<public_key>
+
+wss://seed1.sushipool.com:8443/b0382b37127d6a104e14b2a13dd3cc18b90c41720c821528567c36ced1d10504
+wss://seed.twinibot.com:8443/14e4470b717a7eea4eb50cf16e0c1cf1259569eb6214e64babbb432044e117cb
+wss://ganymed.beeppool.org:443/d52c641e187e42d8cda4b5f34081e037a1afb427b5168d617537504a19b71d5f
+wss://io.beeppool.org:443/6b7aef8d37bceaa7e38699c60747ccd0d20b35483e8abf8304a2b837153329da
+wss://seed.nimiqpool.com:22001/e31f6928121400d6f5f2b2a02e3b99c95bdaef71afe910ddf8deee45eed066a0
+
+2840636e1e57bad6a3fc6163d10aa2351334ced8271a2abef9763635033ff3e9462561b158600bd916a9e9351866d89025c42383bd8758f77c9cb43c1ebef005
