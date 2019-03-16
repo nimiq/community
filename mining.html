@@ -136,7 +136,7 @@ window.onload = function(){
 	var output = "";
 	var poolperc = "";
 	jQuery.get('https://poolwatch.info/api/pools', function(result){
-		for (var poolcount = 1; poolcount < result.length; poolcount++) {
+		for (var poolcount = 0; poolcount < result.length; poolcount++) {
 			poolperc = result[poolcount]["hashRate"] * 100 / result[0]["hashRate"];
 			if (poolperc.toFixed(3) > 0){
 				output = output + " <li> <h4 style=''> " + result[poolcount]["pool"] + "<strong> " + poolperc.toFixed(3) + "%</strong> </h4> <p class='highlighted' data-percent='" + poolperc.toFixed(3) + "' style='width:" + poolperc.toFixed(3) + "%; overflow: visible;'></p> </li>";
