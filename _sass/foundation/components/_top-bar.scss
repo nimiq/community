@@ -152,8 +152,10 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
 
     .top-bar {
       overflow: hidden;
-      height: $topbar-height;
-      line-height: $topbar-height;
+      //height: $topbar-height;
+      height: 100px;
+      //line-height: $topbar-height;
+      line-height: 100px;
       position: relative;
       background: $topbar-bg;
       margin-bottom: $topbar-margin-bottom;
@@ -297,7 +299,8 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
       @include single-transition($default-float, $topbar-transition-speed);
 
       ul {
-        padding: 0;
+	background: white;
+	padding: 0;
         width: 100%;
         height: auto;
         display: block;
@@ -492,6 +495,7 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
         #{$default-float}: 0 !important;
 
         ul {
+	  background: white;	
           width: auto;
           height: auto !important;
           display: inline;

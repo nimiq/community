@@ -290,6 +290,7 @@ ul.shortcode-list i {
 }
 .contain-to-grid .top-bar-section li:not(.has-form) a:not(.button) {
   height: 100px;
+  line-height: 100px;
 }
 .contain-to-grid .top-bar-section .has-dropdown > a:after {
   -moz-transition-property: all;
@@ -580,8 +581,8 @@ form input.error, form textarea.error {
   background: #eee;
   color: #333;
   text-align: center;
-  font-size: 1.25rem;
-  line-height: 3rem;
+  font-size: 2.187rem;
+  line-height: 5.25rem;
 }
 #footer ul.socials a:hover i {
   -moz-transition: all 0.2s linear;
@@ -3280,9 +3281,6 @@ body {
     background-attachment: scroll;
   }
 
-  .contain-to-grid {
-    height: auto;
-  }
   .contain-to-grid .title-area img, .contain-to-grid .title-area li img, .contain-to-grid .title-area a img {
     width: auto;
   }
