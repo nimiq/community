@@ -99,10 +99,10 @@ exchanges:
 window.onload = function(){
 var output = "";
 jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad709a', function(result){ 
-        var color1h = "green";
-        var color24h = "green";
-        if (result["percent_change_1h"]["btc"] < 0){color1h="red";}
-        if (result["percent_change_24h"]["btc"] < 0){color24h="red";}
+        var color1h = "21BCA5";
+        var color24h = "21BCA5";
+        if (result["percent_change_1h"]["btc"] < 0){color1h="#D94432";}
+        if (result["percent_change_24h"]["btc"] < 0){color24h="D94432";}
         jQuery.get('https://api.nimiqx.com/supply/?api_key=5120bd49e4dd0b4d86aeddbcb3ad709a', function(result2){
         console.log(result["circulating_supply"]);
         output = "<strong>Price</strong> $" + result["usd"] + " / " + result["btc"] + " BTC &emsp; | &emsp; <strong>%Change (BTC) <span style='color:"+ color1h+ "'>" +  result["percent_change_1h"]["btc"] + "% 1h</span></strong> / <strong><span style='color:" + color24h + "'>" + result["percent_change_24h"]["btc"] + "% 24h</span></strong> &emsp; | &emsp; <strong>Circulating Supply</strong> " + result2["circulating_supply"].toFixed(1).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " NIM ";

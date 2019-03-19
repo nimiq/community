@@ -22,7 +22,7 @@ a {
   transition-duration: 0.3s;
 }
 a:hover {
-  color: #999;
+  color: rgba(5, 130, 202, 0.8);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -240,8 +240,7 @@ ul.shortcode-list i {
   background: transparent;
 }
 .contain-to-grid.shadowless .top-bar-section li:not(.has-form) a:not(.button):hover, .contain-to-grid.shadowless .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: #f9f9f9;
-  color: #888;
+  color:  rgba(31,35,72,0.7);
 }
 .contain-to-grid.shadowless .top-bar-section li.active:not(.has-form) a:not(.button):hover {
   background: #f2f2f2;
