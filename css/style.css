@@ -15,7 +15,7 @@
 
 /*some basic settings */
 a {
-  color: #f7b747;
+  color: #0582ca;
   -moz-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   -webkit-transition-duration: 0.3s;
@@ -77,7 +77,7 @@ ul.shortcode-list {
   margin: 0 0 20px;
 }
 ul.shortcode-list i {
-  color: #f7b747;
+  color: #0582ca;
   margin-right: 3px;
 }
 
@@ -102,7 +102,7 @@ ul.shortcode-list i {
   -webkit-border-radius: 50%;
   border-radius: 50%;
   background-color: #f9ce06;
-  border: 3px solid #f7b747;
+  border: 3px solid #0582ca;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -112,7 +112,7 @@ ul.shortcode-list i {
   margin: 0;
 }
 .big-social i:hover {
-  border: 3px solid #f7b747;
+  border: 3px solid #0582ca;
   background-color: rgba(249, 206, 6, 0);
 }
 
@@ -186,7 +186,7 @@ ul.shortcode-list i {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #fff;
-  background: #f7b747;
+  background: #0582ca;
   border: 2px solid #F2B242;
 }
 
@@ -435,7 +435,7 @@ ul.info a {
   margin-right: 5px;
 }
 ul.info i {
-  border: 1px solid #f7b747;
+  border: 1px solid #0582ca;
   padding: 5px;
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
@@ -443,7 +443,7 @@ ul.info i {
   transition: all 0.1s linear;
 }
 ul.info i:hover {
-  background: #f7b747;
+  background: #0582ca;
   color: #fff;
 }
 
@@ -484,7 +484,7 @@ form input.error, form textarea.error {
   color: #999;
 }
 .pager a:hover {
-  color: #f7b747;
+  color: #0582ca;
 }
 .pager .older {
   float: left;
@@ -589,7 +589,7 @@ form input.error, form textarea.error {
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  background: #f7b747;
+  background: #0582ca;
 }
 #footer input.email-address {
   padding: 5px 15px;
@@ -627,7 +627,7 @@ body.screenshot {
 }
 .modBarGraph .bars p.highlighted {
   width: 0;
-  background: #f7b747;
+  background: #0582ca;
   height: 12px;
 }
 
@@ -1207,7 +1207,7 @@ body.screenshot {
 }
 .modBoxedSlider .caption p {
   display: inline-block;
-  background: #f7b747;
+  background: #0582ca;
   color: #fff;
   font-family: "droid serif";
   margin-bottom: 0;
@@ -1232,7 +1232,7 @@ body.screenshot {
   margin-bottom: 40px;
 }
 .modBoxedTextSlider .box i {
-  color: #f7b747;
+  color: #0582ca;
   font-size: 36px;
   width: 48px;
   height: 48px;
@@ -2351,10 +2351,10 @@ body.screenshot {
   color: #999;
 }
 .modGallery .gallery-nav li.current {
-  border: 1px solid #f7b747;
+  border: 1px solid #0582ca;
 }
 .modGallery .gallery-nav li.current a {
-  color: #f7b747;
+  color: #0582ca;
 }
 .modGallery ul.gallery img {
   width: 100%;
@@ -2477,16 +2477,16 @@ body.screenshot {
   margin: 0;
 }
 .modIconText .icon-text-circle:hover i {
-  color: #f7b747;
+  color: #0582ca;
 }
 .modIconText .icon-text-circle-white i:before {
   margin: 0;
 }
 .modIconText .icon-text-circle-white:hover i {
-  color: #f7b747;
+  color: #0582ca;
 }
 .intro {
-  background: linear-gradient(30deg,#3023AE,#9C58CB);	
+  background: radial-gradient(1152px at 100% 100%, #260133 0%, #1F2348 100%) fixed;
   height:100vh;
 }
 @media only screen and (max-width: 769px) {
@@ -2533,10 +2533,10 @@ body {
   color: #999;
 }
 .modMasonryGallery .gallery-nav li.current {
-  border: 1px solid #f7b747;
+  border: 1px solid #0582ca;
 }
 .modMasonryGallery .gallery-nav li.current a {
-  color: #f7b747;
+  color: #0582ca;
 }
 .modMasonryGallery ul.gallery {
   margin: 0;
@@ -2623,7 +2623,7 @@ body {
 .modMilestone i {
   font-size: 36px;
   color: #333;
-  background: #f7b747;
+  background: #0582ca;
   width: 90px;
   height: 90px;
   -moz-border-radius: 45px;
@@ -2719,7 +2719,7 @@ body {
 }
 
 .modPriceBox.featured .info {
-  border-top: 4px solid #f7b747;
+  border-top: 4px solid #0582ca;
 }
 
 .modPriceBox:hover {
@@ -2734,7 +2734,7 @@ body {
   width: 66%;
   margin: 0 auto;
   height: 2px;
-  background: #f7b747;
+  background: #0582ca;
   display: block;
 }
 
@@ -2834,7 +2834,7 @@ body {
   border: 1px solid #999;
 }
 .modStylePanel a#yellow {
-  background: #f7b747;
+  background: #0582ca;
 }
 .modStylePanel a#red {
   background: #e92b05;

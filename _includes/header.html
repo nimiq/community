@@ -15,9 +15,6 @@
     </ul>
     <section class='top-bar-section'>
       <ul class="right">
-	<li class="{{active_class}}">
-	  <a href="{{site.url}}/index.html#intro" style="color:#9753C6;border: 2px solid #9753C6;font-weight:bold">Start Here</a>
-	</li>      
 	{% for item in site.data.nav %}
           {% if item.section_id == page.section_id %}
             {% assign active_class = "active" %}
