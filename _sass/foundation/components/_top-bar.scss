@@ -30,7 +30,7 @@ $topbar-link-color-hover: $white !default;
 $topbar-link-color-active: $white !default;
 $topbar-link-color-active-hover: $white !default;
 $topbar-link-weight: $font-weight-normal !default;
-$topbar-link-font-size: rem-calc(13) !default;
+$topbar-link-font-size: rem-calc(33) !default;
 $topbar-link-hover-lightness: -10% !default; // Darken by 10%
 $topbar-link-bg: $topbar-bg !default;
 $topbar-link-bg-hover: $oil !default;
@@ -323,9 +323,10 @@ $topbar-dropdown-arrows: true !default; //Set false to remove the \00bb >> text 
           color: $topbar-link-color;
           padding: 12px 0 12px 0;
           padding-#{$default-float}: $topbar-link-padding;
-          font-family: $topbar-link-font-family;
-          font-size: $topbar-link-font-size;
-          font-weight: $topbar-link-weight;
+          //font-family: $topbar-link-font-family;
+//          font-size: $topbar-link-font-size;
+	  font-size: 2rem;
+	  font-weight: $topbar-link-weight;
           text-transform: $topbar-link-text-transform;
 
           &.button {
