@@ -23,10 +23,6 @@ images:
 ##### [Welcome to Nimiq Community](http://community.nimiq.space/logo%20design/2017/12/08/welcome-to-nimiq-community.html)
 ##### [Staying safe in our Discord](http://community.nimiq.space/logo%20design/tricks%20and%20tips/2018/03/13/Discord.html)
 
-#### Buying NET
-
-##### [Buying NET in Liqui](http://community.nimiq.space/logo%20design/tricks%20and%20tips/2018/03/07/buying-NET.html)
-
 #### Buying Nimiq
 
 ##### [Buying NIM in Tradesatoshi](http://community.nimiq.space/index.html#Education)

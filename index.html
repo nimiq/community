@@ -38,11 +38,11 @@ projects:
     desc: Block Explorer
     class: graphic-design
     url: https://nimiq.mopsus.com/
-  - image: images/projects/nimipet.jpg
-    title: Nimipet
-    desc: Web-based Tamagotchi game built using Nimiq.
+  - image: images/projects/nimnow.jpg
+    title: NimNow
+    desc: Site that rewards NIM to users for completing surveys.
     class: web-design print
-    url: https://nimipet.com/
+    url: http://www.nimnow.com
   - image: images/projects/poolwatch.jpg
     title: Pool Watch
     desc: Collects and displays pool stats
@@ -90,10 +90,24 @@ exchanges:
     url: https://tradesatoshi.com/Exchange/?market=NIM_BTC
   - img: images/exchanges/nimex.jpg
     url: https://www.nimex.app/
+  - img: images/exchanges/agora.jpg
+    url: https://agora.trade/
   - img: images/exchanges/latokenlogo.jpg
     url: https://bit.ly/2IyYY8s
   - img: images/exchanges/btcalpha.jpg
     url: https://btc-alpha.com/coin/NIM/ 
+  - img: images/exchanges/hitbtc.jpg
+    url: https://hitbtc.com/NIM-to-BTC 
+  - img: images/exchanges/changelly.jpg
+    url: https://changelly.com/exchange/btc/nim?ref_id=v06xmpbqj5lpftuj 
+  - img: images/exchanges/changehero.jpg
+    url: https://changehero.io/
+  - img: images/exchanges/changenow.jpg
+    url: https://changenow.io/
+  - img: images/exchanges/stealthex.jpg
+    url: https://stealthex.io/
+  - img: images/exchanges/bisq.jpg
+    url: https://bisq.network/
 ---
 <script>
 window.onload = function(){
@@ -137,7 +151,7 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
   <div class='row'>
     <div class='large-12 columns'>
       <p style='font-size: 2.8rem; color: #1F2348;'>
-       Want to learn some Blockchain, increase your Web skills and make some friends? Join this talented and diverse group of enthusiasts building innovative projects on top of <b><a href="https://nimiq.com">Nimiq Blockchain</a>.</p>
+       Nimiq's Community elevator pitch is being discussed <b><a href="https://nimiq.com">HERE</a>.</p>
       </p>
       <div class='spacing'></div>
     </div>
@@ -167,8 +181,6 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
 <div class='row'>
   <div class='large-12 columns'>
 	<a name="Education"></a>
-	<div class='two spacing'></div>
-	<div class='two spacing'></div>
     <h2  name="education">
       Education
       /
@@ -212,14 +224,9 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
   </div>
 </div>
 <hr>
-
-
-<div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
 	<a name="Collaboration"></a>
-	<div class='two spacing'></div>
-	<div class='two spacing'></div>
     <h2>
       Collaboration
       /
@@ -234,7 +241,7 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
         <li class='{{project.class}}'>
 	<a href="{{project.url}}">
             <img alt="" src="{{project.image}}" />
-            <div class='overlay' style='background: rgba(251, 208, 138, 0.8);'>
+            <div class='overlay' style='background: rgba(31, 35, 72, 0.8);'>
               <div class='thumb-info'>
 		<h3><b>{{project.title}}</b></h3>
 		<p><b>{{project.desc}}</b></p>
@@ -252,8 +259,6 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
 <div class='row'>
   <div class='large-12 columns'>
 	<a name="Innovation"></a>
-	<div class='two spacing'></div>
-	<div class='two spacing'></div>
     <h2>
       Innovation
       /
@@ -268,7 +273,7 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
         <li class='{{entry.class}}'>
 	<a href="{{entry.url}}">
             <img alt="" src="{{entry.image}}" />
-            <div class='overlay' style='background: rgba(251, 208, 138, 0.8);'>
+            <div class='overlay' style='background: rgba(31, 35, 72, 0.8);'>
               <div class='thumb-info'>
 		<h3><b>{{entry.title}}</b></h3>
 		<p><b>{{entry.desc}}</b></p>
@@ -280,12 +285,9 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
     </ul>
   </div>
 </div>
-<div class='two spacing'></div>
-<div class='two spacing'></div>
 <div class='row'>
   <div class='large-12 columns'>
     <h2>Exchanges</h2>
-    <div class='spacing'></div>
     <div class='mod modClients' data-slides_to_show='5'>
       <div class='clients'>
         {% for ex in page.exchanges %}

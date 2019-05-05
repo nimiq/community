@@ -30,6 +30,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
+ul, ol, dl {
+	font-size: 2rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
 .centered-text {
   text-align: center;
 }
@@ -60,7 +68,7 @@ hr {
 }
 
 .full {
-  padding: 80px 0 0;
+  padding: 20px 0 0;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -536,7 +544,7 @@ form input.error, form textarea.error {
   line-height: 1.8em;
 }
 .links a {
-  color: #999;
+  color: #1f2348;
 }
 .links a:hover {
   color: #333;
@@ -589,6 +597,7 @@ form input.error, form textarea.error {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   background: #0582ca;
+  color:white;
 }
 #footer input.email-address {
   padding: 5px 15px;
@@ -871,7 +880,7 @@ body.screenshot {
   color: #f9ce06;
 }
 .modBlogPost .date {
-  font-size: 0.78571rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #ccc;
@@ -928,10 +937,10 @@ body.screenshot {
   color: #f9ce06;
 }
 .modBlogPost.big h4 {
-  font-size: 1.7rem;
+  font-siz22rem;
 }
 .modBlogPost.big h5 {
-  font-size: 1.15rem;
+  font-size: 1.6rem;
 }
 .modBlogPost.big a:hover img {
   opacity: 1;
@@ -1206,25 +1215,27 @@ body.screenshot {
 }
 .modBoxedSlider .caption p {
   display: inline-block;
-  background: #0582ca;
+  background: var(--nimiq-gold);
   color: #fff;
-  font-family: "droid serif";
+  font-family: "Muli";
   margin-bottom: 0;
   padding: 10px 20px;
-  font-style: italic;
-  font-size: 1.2rem;
+  font-style: bold;
+  font-size: 2.4rem;
 }
 .modBoxedSlider .caption h2 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   letter-spacing: 3px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(31, 35, 72, 0.40);
   padding: 10px 20px;
   color: #fff;
+  font-family:"Muli";
+  font-style: bold;
 }
 .modBoxedTextSlider .box {
   padding: 50px 40px 50px;
   margin: 0 20px;
-  background: #fff;
+  background: #f4f4f4;
   text-align: center;
 }
 .modBoxedTextSlider .box h3 {
@@ -2401,7 +2412,7 @@ body.screenshot {
 }
 .modGallery ul.gallery li a p {
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 1.7rem;
 }
 .modGallery ul.gallery li a:hover .overlay {
   opacity: 1;
@@ -2476,7 +2487,7 @@ body.screenshot {
   margin: 0;
 }
 .modIconText .icon-text-circle:hover i {
-  color: white;
+  color: var(--nimiq-light-blue);;
 }
 .modIconText .icon-text-circle-white i:before {
   margin: 0;
@@ -3230,7 +3241,7 @@ body {
 }
 .modTestimonials.simple .author .author-name {
   padding-top: 30px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 
 }
 .modTestimonials.simple .author .author-name strong {
