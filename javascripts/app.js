@@ -566,13 +566,13 @@ jQuery(document).foundation();
         var gallery = $('.gallery-nav').closest('.modGallery').find('ul.gallery');
 
         if (cat === 'all') {
-          $('li', gallery).removeClass('hidden');
+          $('li', gallery).removeClass('display-none');
         } else {
           $('li', gallery).each(function() {
             if ($(this).hasClass(cat)) {
-              $(this).removeClass('hidden');
+              $(this).removeClass('display-none');
             } else {
-              $(this).addClass('hidden');
+              $(this).addClass('display-none');
             }
           });
         }
