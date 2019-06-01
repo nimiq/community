@@ -25,6 +25,11 @@ a:hover {
   color: rgba(5, 130, 202, 0.8);
 }
 
+p {
+  color: #1f2348;
+  font-size: 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -2387,6 +2392,7 @@ body.screenshot {
   position: relative;
   display: block;
   overflow: hidden;
+  border-radius:30px;
 }
 .modGallery ul.gallery li a .overlay {
   opacity: 0;
@@ -2936,8 +2942,8 @@ body {
   background: #f7b747;
   color: #fff;
   text-align: center;
-  font-size: 1.125rem;
-  line-height: 2.5rem;
+  font-size: 2.125rem;
+  line-height: 4.5rem;
 }
 .modTeamMember img {
   width: 100%;
@@ -2971,6 +2977,7 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
   top: 0;
+  border-radius: 30px;
 }
 
 .modTeamMember.style-2 h3 {
@@ -2982,7 +2989,7 @@ body {
   font-size: 0.8rem;
 }
 .modTeamMember.style-2 .overlay {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(31, 35, 72, 0.8);
 }
 .modTeamMember.style-2 .overlay ul.socials {
   position: relative;

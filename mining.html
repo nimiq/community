@@ -44,7 +44,7 @@ members:
 
   - name: SiriusPool
     desc:
-      Efficiency mining under your control..
+      First Greek Pool for Nimiq!
     avatar: images/pools/siriuspool.jpg
     socials:
       - icon_class: fa fa-globe
@@ -52,7 +52,7 @@ members:
 
   - name: Nimiqpocket
     desc:
-      Mining in your pocket.
+      Mining in your pocket
     avatar: images/pools/nimiqpocket.jpg
     socials:
       - icon_class: fa fa-globe
@@ -62,7 +62,7 @@ members:
 
   - name: mineNIM
     desc:
-      mineNIM Mining Pool.
+      mineNIM Mining Pool
     avatar: images/pools/minenim.jpg
     socials:
       - icon_class: fa fa-globe
@@ -71,6 +71,17 @@ members:
         url: https://discord.gg/nmCzMRc
       - icon_class: fa fa-qq
         url: https://jq.qq.com/?_wv=1027&k=5ekBajJ
+
+  - name: IceMining
+    desc:
+      Multicurrency mining site
+    avatar: images/pools/icemining.jpg
+    socials:
+      - icon_class: fa fa-globe
+        url: https://icemining.ca/
+      - icon_class: fa fa-comments
+        url: https://discord.gg/2uz9B8Y
+
 ---
 <script>
 window.onload = function(){
@@ -90,12 +101,15 @@ window.onload = function(){
 
 </script>
 <div class='full'>
+  <div class='spacing'></div>
   <div class='row'>
     <div class='medium-6 columns'>
+	    <h2>Start Mining!</h2>
+	    <p>To start mining you can download the <a href="https://nimiq.com/en/#downloads">Official Nimiq Client</a> and follow the instructions. If you need more help check the <a href="https://forum.nimiq.community/t/comprehensive-guide-to-mining-nimiq/64">Comprehensive guide to mining Nimiq</a>, made by the Nimiq Community.</p>
+      <div class='spacing'></div>
 	    <h3>Pool Server</h3>
       <div class='spacing'></div>
       <p>Following a true decentralized path, Nimiq does not provide an official pool but the implementation of the <a href='https://github.com/nimiq-network/mining-pool'>Nimiq Mining Pool Server</a> for community members to implement their own pool.</p>
-	<a class='button' target="_self" href='#poollist'>Pool List</a>
     </div>
     <div class='medium-6 columns'>
       <h3>Hashrate Distribution</h3>
@@ -108,11 +122,8 @@ window.onload = function(){
     </div>
   </div>
 </div>
-<div class='two spacing'></div>
 <hr>
-<div class='two spacing' id="poollist"></div>
-<div class='two spacing'></div>
-<div class='two spacing'></div>
+<div class='spacing' id="poollist"></div>
 <div class='row'>
   <div class='large-12 columns'>
     <h2>Pools</h2>
