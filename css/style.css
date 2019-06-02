@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+#main > .full > .row > .medium-3.large-3.columns {
+min-height: 35rem;
+}
+#main > .row > .small-6.medium-3.large-3.columns.columns {
+    min-height: 55rem;
+}
+
 @font-face {
   font-family: "Steelfish";
   src: url('../fonts/steelfish/steelfish_eb-webfont.eot');
