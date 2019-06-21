@@ -2509,23 +2509,6 @@ body.screenshot {
   border: 3px solid white;
   color: white;
 }
-.intro {
-  background: radial-gradient(1152px at 100% 100%, #260133 0%, #1F2348 100%) fixed;
-  height:100vh;
-}
-@media only screen and (max-width: 769px) {
-	.intro {
-            height: 1200px;
-        }
-    }
-.introspace {
-  height:280px;
-}
-@media only screen and (max-width: 480px) {
-        .introspace {
-            height: 10px;
-        }
-    }
 .modIconText .icon-text-simple i {
   font-size: 3.42857rem;
   float: left;
@@ -3504,3 +3487,34 @@ body {
   }
 }
 
+#main > section {
+  min-height: calc(100vh - 60px);
+}
+
+#main > section:first-of-type {
+  min-height: calc(100vh - 100px);
+}
+
+section#intro > .row {
+  /* position: relative;
+  top: 50%;
+  margin-top: -50%; */
+}
+
+.intro {
+  background: radial-gradient(1152px at 100% 100%, #260133 0%, #1F2348 100%) fixed;
+  /* height:100vh; */
+}
+@media only screen and (max-width: 769px) {
+	.intro {
+            height: 1200px;
+        }
+    }
+.introspace {
+  height:280px;
+}
+@media only screen and (max-width: 480px) {
+        .introspace {
+            height: 10px;
+        }
+    }
