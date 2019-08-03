@@ -95,11 +95,11 @@ exchanges:
   - img: images/exchanges/latokenlogo.jpg
     url: https://bit.ly/2IyYY8s
   - img: images/exchanges/btcalpha.jpg
-    url: https://btc-alpha.com/coin/NIM/ 
+    url: https://btc-alpha.com/coin/NIM/
   - img: images/exchanges/hitbtc.jpg
-    url: https://hitbtc.com/NIM-to-BTC 
+    url: https://hitbtc.com/NIM-to-BTC
   - img: images/exchanges/changelly.jpg
-    url: https://changelly.com/exchange/btc/nim?ref_id=v06xmpbqj5lpftuj 
+    url: https://changelly.com/exchange/btc/nim?ref_id=v06xmpbqj5lpftuj
   - img: images/exchanges/changehero.jpg
     url: https://changehero.io/
   - img: images/exchanges/changenow.jpg
@@ -112,7 +112,7 @@ exchanges:
 <script>
 window.onload = function(){
 var output = "";
-jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad709a', function(result){ 
+jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad709a', function(result){
         var color1h = "21BCA5";
         var color24h = "21BCA5";
         if (result["percent_change_1h"]["btc"] < 0){color1h="#D94432";}
@@ -126,6 +126,8 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
 }
 </script>
 
+
+<section>
 <div class='full no-padding'>
   <div class='spacing'></div>
   <div class='row'>
@@ -157,39 +159,44 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
     </div>
   </div>
 </div>
-<div class='two spacing'></div>
-<div class='two spacing'></div>
-<div class="intro"; id="intro">
-<div class="introspace"></div>
-<div class='row'>
-  {% for main in page.mains %}
-    <div class='medium-4 large-4 columns'>
-      <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
-        <div class='icon-text-circle-white'>
-	  <a href="#{{main.title}}">
-	  <i class='{{main.icon_class}}'></i>
-          <h3 class'icon-text-circle-white' style="color: #C0C0C0; font-size: 3.5rem">{{main.title}}</h3>
-	  </a>
-	  <p style='font-size: 2.5rem;color:#C0C0C0'>{{main.desc}}</p>
-	  </div>
+</section>
+
+
+<section class="intro" id="intro">
+  <div class="introspace"></div>
+  <div class="row">
+    {% for main in page.mains %}
+      <div class='medium-4 large-4 columns'>
+        <div class='fadein mod modIconText' data-delay='{{ 200 | times:forloop.index0 }}'>
+          <div class='icon-text-circle-white'>
+      <a href="#{{main.title}}">
+      <i class='{{main.icon_class}}'></i>
+            <h3 class'icon-text-circle-white' style="color: #C0C0C0; font-size: 3.5rem">{{main.title}}</h3>
+      </a>
+      <p style='font-size: 2.5rem;color:#C0C0C0'>{{main.desc}}</p>
       </div>
+        </div>
+      </div>
+    {% endfor %}
     </div>
-  {% endfor %}
-</div>
-</div>
-<div class='two spacing'></div>
-<div class='row'>
-  <div class='large-12 columns'>
-	<a name="Education"></a>
-    <h2  name="education">
-      Education
-      /
-      <a href='/academy' name="Education">Join the Academy</a>
-    </h2>
-    <p style='font-size: 2rem;' >The Nimiq platform is fundamentally designed for ease of use and mass adoption. Enroll in the Nimiq Academy to learn all about the project, its potential use cases, and how both the team and community are using Nimiq to bring blockchain to the masses.</p>
-    <div class='spacing'></div>
   </div>
-</div>
+</section>
+
+
+<section>
+  <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+    <a name="Education"></a>
+      <h2  name="education">
+        Education
+        /
+        <a href='/academy' name="Education">Join the Academy</a>
+      </h2>
+      <p style='font-size: 2rem;' >The Nimiq platform is fundamentally designed for ease of use and mass adoption. Enroll in the Nimiq Academy to learn all about the project, its potential use cases, and how both the team and community are using Nimiq to bring blockchain to the masses.</p>
+      <div class='spacing'></div>
+    </div>
+  </div>
 
 
 <div class='two spacing'></div>
@@ -298,6 +305,7 @@ jQuery.get('https://api.nimiqx.com/price/?api_key=5120bd49e4dd0b4d86aeddbcb3ad70
   </div>
 </div>
 </div>
-<div class='full no-padding'>
-  <div class='two spacing'></div>
+  <div class='full no-padding'>
 </div>
+
+</section>
