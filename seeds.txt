@@ -6,11 +6,12 @@
 #    wss://<hostname>:<port>/<public_key>
 #    ws://<hostname|ip>:<port>/<public_key>
 
-wss://seed1.sushipool.com:8443/b0382b37127d6a104e14b2a13dd3cc18b90c41720c821528567c36ced1d10504
-wss://seed.twinibot.com:8443/14e4470b717a7eea4eb50cf16e0c1cf1259569eb6214e64babbb432044e117cb
-wss://ganymed.beeppool.org:443/d52c641e187e42d8cda4b5f34081e037a1afb427b5168d617537504a19b71d5f	
-wss://io.beeppool.org:443/6b7aef8d37bceaa7e38699c60747ccd0d20b35483e8abf8304a2b837153329da
 wss://seed.nimiqpool.com:22001/e31f6928121400d6f5f2b2a02e3b99c95bdaef71afe910ddf8deee45eed066a0
-wss://nimiq.link:443/09b12d386ec933ba523afcde9e8ec8bbd125a86c5962494ab36d1dc31e730624
+wss://seed.nimiq.by:8443/c4df959f0f44f971fae2c487b65d6c8eee4aae691e7fd21ffe4e746e6774f92e
+wss://urp.best:8443/230ff3860e5f75113758f7b6aa3774863ff116c3435efd2c69e8d7b45192296d
+wss://nimiq.icemining.ca:8443/c035eda9dfea2a1c7a30b06f4dcb8b774302d4e25d0dc4dcc45985fc8a2d7432
+wss://nimiq.mopsus.com:5653/65928f18e1a7295ac3eb7ab371277a544208a021a0c26763c2ad457df6a497fe
+wss://hk1.seed.nimpool.io:443/0e9b0b3b470f02d2928e2d676a6beea0cf959a462101182eebb4f5d5d7c744c7
+wss://node.nimiq.watch:8080/5a295d17ac7fd0d70b0d6c607321da8c3518e09bfca51648399f555af4f96c55
 
 471fa0f8e2e2bca811072b0cc3c891f2a0a35facc4b9797b52e2ee246001092b7254ac92f8f6145b1a081b91f7db09b504ec4d765f481701ef25ee86c9d1880f
