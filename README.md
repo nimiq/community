@@ -1,5 +1,7 @@
 # Nimiq Community Site
 
+[![Donate NIM](https://www.nimiq.com/accept-donations/img/donationBtnImg/light-blue-small.svg)](https://safe.nimiq.com/#_request/NQ527TL5RA6BSSASFULCP3SRD88BX2CK0VTX_)
+
 A site to gather user contributions of projects related to [Nimiq](https://nimiq.com/)
 
 Clone this git repository
