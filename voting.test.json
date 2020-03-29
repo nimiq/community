@@ -1,0 +1,16 @@
+{ "votings": [
+    {
+        "start": 900000,
+        "end": 1100000,
+        "label": "What\"s the best ice cream: Vanilla or Chocolate?",
+        "name": "best ice cream",
+        "type": "weightedChoices",
+        "options": [{
+            "name": "vanilla",
+            "label": "Vanilla"
+        }, {
+            "name": "chocolate",
+            "label": "Chocolate"
+        }]
+    }]
+}
