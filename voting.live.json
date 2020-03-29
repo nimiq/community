@@ -1,0 +1,16 @@
+{ "votings": [
+    {
+        "start": 1000000,
+        "end": 1100000,
+        "label": "We all know the right answer, but what do you prefer?",
+        "name": "tabs-vs-spaces",
+        "type": "weightedChoices",
+        "options": [{
+            "name": "tabs",
+            "label": "tabs"
+        }, {
+            "name": "spaces",
+            "label": "spaces"
+        }]
+    }]
+}
