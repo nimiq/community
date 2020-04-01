@@ -5,7 +5,7 @@
         "label": "What\"s the best ice cream: Vanilla or Chocolate?",
         "name": "best ice cream",
         "type": "weightedChoices",
-        "options": [{
+        "choices": [{
             "name": "vanilla",
             "label": "Vanilla"
         }, {

@@ -5,7 +5,7 @@
         "label": "We all know the right answer, but what do you prefer?",
         "name": "tabs-vs-spaces",
         "type": "weightedChoices",
-        "options": [{
+        "choices": [{
             "name": "tabs",
             "label": "tabs"
         }, {
