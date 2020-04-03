@@ -1,16 +1,37 @@
 { "votings": [
     {
-        "start": 900000,
-        "end": 1100000,
-        "label": "What\"s the best ice cream: Vanilla or Chocolate?",
-        "name": "best ice cream",
-        "type": "weightedChoices",
-        "choices": [{
-            "name": "vanilla",
-            "label": "Vanilla"
-        }, {
-            "name": "chocolate",
-            "label": "Chocolate"
-        }]
-    }]
-}
+      "start": 1030884,
+      "end": 1240884,
+      "label": "What's the best ice cream: Vanilla or Chocolate?",
+      "name": "best ice cream",
+      "type": "singleChoice",
+      "choices": [
+        {
+          "name": "vanilla",
+          "label": "Vanilla"
+        },
+        {
+          "name": "chocolate",
+          "label": "Chocolate"
+        }
+      ]
+    },
+    {
+      "start": 100,
+      "end": 1000,
+      "label": "Test",
+      "name": "test",
+      "type": "singleChoice",
+      "choices": [
+        {
+          "name": "vanilla",
+          "label": "Vanilla"
+        },
+        {
+          "name": "chocolate",
+          "label": "Chocolate"
+        }
+      ],
+      "results": "chocolate-vs-vanilla-2018"
+    }
+  ]
