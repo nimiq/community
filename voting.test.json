@@ -2,9 +2,9 @@
     {
       "start": 900884,
       "end": 1240884,
-      "label": "What's the best ice cream: Vanilla or Chocolate?",
+      "label": "What's the best ice cream?",
       "name": "best ice cream",
-      "type": "singleChoice",
+      "type": "ranking",
       "choices": [
         {
           "name": "vanilla",
@@ -13,6 +13,14 @@
         {
           "name": "chocolate",
           "label": "Chocolate"
+        },
+        {
+          "name": "strawberry",
+          "label": "Strawberry"
+        },
+        {
+          "name": "none",
+          "label": "I don't like ice cream."
         }
       ]
     },
