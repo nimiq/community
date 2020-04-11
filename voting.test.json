@@ -1,46 +1,30 @@
-{ "votings": [
-    {
-      "start": 900884,
-      "end": 1240884,
-      "label": "What's the best ice cream?",
-      "name": "best ice cream",
-      "type": "ranking",
-      "choices": [
-        {
-          "name": "vanilla",
-          "label": "Vanilla"
-        },
-        {
-          "name": "chocolate",
-          "label": "Chocolate"
-        },
-        {
-          "name": "strawberry",
-          "label": "Strawberry"
-        },
-        {
-          "name": "none",
-          "label": "I don't like ice cream."
-        }
-      ]
-    },
-    {
-      "start": 100,
-      "end": 1000,
-      "label": "Test",
-      "name": "test",
-      "type": "singleChoice",
-      "choices": [
-        {
-          "name": "vanilla",
-          "label": "Vanilla"
-        },
-        {
-          "name": "chocolate",
-          "label": "Chocolate"
-        }
-      ],
-      "results": "chocolate-vs-vanilla-2018"
-    }
-  ]
+{
+  "votings": [{
+    "start": 900884,
+    "end": 1040884,
+    "label": "Should Nimiq adjust its supply curve?",
+    "name": "change-curve",
+    "type": "singleChoice",
+    "choices": [{
+      "name": "yes",
+      "label": "Yes"
+    }, {
+      "name": "no",
+      "label": "No"
+    }]
+  }, {
+    "start": 100,
+    "end": 1000,
+    "label": "Test",
+    "name": "test",
+    "type": "singleChoice",
+    "choices": [{
+      "name": "vanilla",
+      "label": "Vanilla"
+    }, {
+      "name": "chocolate",
+      "label": "Chocolate"
+    }],
+    "results": "chocolate-vs-vanilla-2018"
+  }]
 }
