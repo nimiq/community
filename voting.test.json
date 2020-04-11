@@ -1,6 +1,6 @@
 {
   "votings": [{
-    "start": 900884,
+    "start": 920884,
     "end": 1040884,
     "label": "Should Nimiq adjust its supply curve?",
     "name": "change-curve",
