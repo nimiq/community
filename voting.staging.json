@@ -1,0 +1,36 @@
+{
+  "votings": [{
+    "start": 923198,
+    "end": 934298,
+    "label": "What is the optimal supply curve?",
+    "name": "pick-curve",
+    "type": "ranking",
+    "choices": [{
+      "name": "green",
+      "label": "Green curve"
+    }, {
+      "name": "red",
+      "label": "Red curve"
+    }, {
+      "name": "blue",
+      "label": "Blue curve"
+    }, {
+      "name": "none",
+      "label": "None of the choices"
+    }]
+  }, {
+    "start": 100,
+    "end": 1000,
+    "label": "Test",
+    "name": "test",
+    "type": "singleChoice",
+    "choices": [{
+      "name": "vanilla",
+      "label": "Vanilla"
+    }, {
+      "name": "chocolate",
+      "label": "Chocolate"
+    }],
+    "results": "chocolate-vs-vanilla-2018"
+  }]
+}
