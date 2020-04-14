@@ -1,22 +1,16 @@
 {
   "votings": [{
-    "start": 923198,
-    "end": 934298,
-    "label": "What is the optimal supply curve?",
-    "name": "pick-curve",
-    "type": "ranking",
+    "start": 920884,
+    "end": 1040884,
+    "label": "Should Nimiq adjust its supply curve?",
+    "name": "change-curve",
+    "type": "singleChoice",
     "choices": [{
-      "name": "green",
-      "label": "Green curve"
+      "name": "yes",
+      "label": "Yes"
     }, {
-      "name": "red",
-      "label": "Red curve"
-    }, {
-      "name": "blue",
-      "label": "Blue curve"
-    }, {
-      "name": "none",
-      "label": "None of the choices"
+      "name": "no",
+      "label": "No"
     }]
   }, {
     "start": 100,
