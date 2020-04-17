@@ -2,9 +2,10 @@
   "votings": [{
     "start": 920884,
     "end": 1040884,
-    "label": "Should Nimiq adjust its supply curve?",
+    "label": "Should the NIM supply growth curve be adjusted?",
     "name": "change-curve",
     "type": "singleChoice",
+    "link": "https://www.nimiq.com/blog/nimiq-20-supply-curve-voting/",
     "choices": [{
       "name": "yes",
       "label": "Yes"

@@ -1,10 +1,11 @@
 {
   "votings": [{
     "start": 923198,
-    "end": 934298,
+    "end": 944298,
     "label": "What is the optimal supply curve?",
     "name": "pick-curve",
     "type": "ranking",
+    "link": "https://www.nimiq.com/blog/nimiq-20-supply-curve-voting/",
     "choices": [{
       "name": "green",
       "label": "Green curve"
